@@ -5,7 +5,8 @@
  * @package test123123
  */
 ?>
-	<div id="secondary" class="widget-area" role="complementary">
+	<div id="secondary" class="widget-area sidebar-left col-md-3 col-sm-4 hidden-xs" role="complementary">
+        LEFT SIDEBAR
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 			<aside id="search" class="widget widget_search">
