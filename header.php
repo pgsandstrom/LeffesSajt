@@ -14,8 +14,9 @@
     <title><?php wp_title('|', true, 'right'); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-<!--    <link rel="stylesheet" href="--><?php //bloginfo('template_directory'); ?><!--/css/bootstrap-theme.css" type="text/css"-->
-<!--          media="screen"/>-->
+    <!--    <link rel="stylesheet" href="-->
+    <?php //bloginfo('template_directory'); ?><!--/css/bootstrap-theme.css" type="text/css"-->
+    <!--          media="screen"/>-->
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" type="text/css"
           media="screen"/>
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css" type="text/css"
@@ -29,8 +30,16 @@
 
     <header id="masthead" class="site-header" role="banner">
         <div class="site-branding">
+
+            <!--            bloggens namn:-->
+            <?php //bloginfo('name'); ?>
+
+
             <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
-                                      rel="home"><?php bloginfo('name'); ?></a></h1>
+                                      rel="home">
+                    <img src="<?php echo get_bloginfo('template_directory');?>/img/logga.png"/>
+
+                                      </a></h1>
 
             <h2 class="site-description"><?php bloginfo('description'); ?></h2>
         </div>
