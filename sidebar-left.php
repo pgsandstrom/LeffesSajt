@@ -33,6 +33,12 @@
         </ul>
     </aside>
 
+    <aside id="authors-comments" class="widget">
+            <div id="authors-comments-title">titel</div>
+        <div id="authors-comments-body">titel</div>
+        <img src="<?php bloginfo('template_directory'); ?>/img/authors.png" alt=""/>
+    </aside>
+
     <aside id="meta" class="widget">
         <h2 class="sidebar-title">META</h2>
         <ul>

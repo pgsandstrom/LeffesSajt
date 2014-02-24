@@ -1,13 +1,64 @@
+.site-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.site-title {
+    float: left;
+}
+
+#site-navigation {
+    float: left;
+}
+
+#authors-comments {
+    background: url("../img/author_comments_border.png") no-repeat;
+    /*background-size: cover;*/
+    height: 317px;
+}
+
+#authors-comments-title {
+    color: white;
+}
+
+#authors-comments-body {
+
+}
+
 .sidebar-text {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-    font-weight: bold;
     font-size: 1em;
+    font-weight: bold;
 }
 
 .sidebar-title {
+    /*ersätt font med sg cheltenham old style*/
     font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-size: 1em;
     font-weight: bold;
-    font-style:italic;
+    font-style: italic;
+}
+
+.entry-title {
+    /*ersätt font med sg cheltenham old style*/
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-size: 2.6em;
+    font-weight: bold;
+    font-style: italic;
+    background: url("../img/title_background.png") no-repeat;
+}
+
+.entry-content {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1.2em;
+}
+
+.tags-links {
+    color: lightskyblue !important;
+}
+
+.tags-links a {
+    color: lightskyblue !important;
 }
 
 /*.content-area {*/
