@@ -37,7 +37,7 @@
 
             <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
                                       rel="home">
-                    <img src="<?php echo get_bloginfo('template_directory');?>/img/logga.png"/>
+                    <img src="<?php echo get_bloginfo('template_directory');?>/img/logo.png"/>
 
                                       </a></h1>
 

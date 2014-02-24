@@ -20,7 +20,7 @@ get_header(); ?>
 
         <?php if (have_posts()) : ?>
             sec
-            <?php /* Start the Loop */ ?>
+            <?php /* Start the Loop */ ?>log
 
             <?php while (have_posts()) : the_post(); ?>
 
@@ -29,7 +29,7 @@ get_header(); ?>
                 $categories = get_the_category();
                 foreach ($categories as $category) {
 //                        echo("kategorin som hittades: " . $category->term_id . ", " . $category->name);
-                    if ($category->name == "artikel") {
+                    if ($category->name == "artiklar") {
                         $found_category = true;
                     }
                 }
