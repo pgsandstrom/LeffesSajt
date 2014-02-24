@@ -1,16 +1,28 @@
+.sidebar-text {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.sidebar-title {
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-weight: bold;
+    font-style:italic;
+}
+
 /*.content-area {*/
-    /*width: 960px;*/
-    /*margin: 0 auto;*/
+/*width: 960px;*/
+/*margin: 0 auto;*/
 /*}*/
 
 /*@media (max-width: 1000px) {*/
-    /*.sidebar-right {*/
-        /*display:none;*/
-    /*}*/
+/*.sidebar-right {*/
+/*display:none;*/
+/*}*/
 /*}*/
 
 /*@media (max-width: 1000px) {*/
-    /*.content-area {*/
-        /*width:50%;*/
-    /*}*/
+/*.content-area {*/
+/*width:50%;*/
+/*}*/
 /*}*/
