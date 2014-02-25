@@ -34,8 +34,8 @@
     </aside>
 
     <aside id="authors-comments" class="widget">
-            <div id="authors-comments-title">titel</div>
-        <div id="authors-comments-body">titel</div>
+            <div id="authors-comments-title">FÖRFATTARNA KOMMENTERAR</div>
+        <div id="authors-comments-body">Lite statisk text som ligger här under tiden, du vet.</div>
         <img src="<?php bloginfo('template_directory'); ?>/img/authors.png" alt=""/>
     </aside>
 
