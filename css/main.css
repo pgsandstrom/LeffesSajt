@@ -2,6 +2,19 @@ body {
     /*font-size: 160% !important;*/
 }
 
+.sidebar-separator {
+    position: absolute;
+    border-left: solid #000000 1px;
+    height: 100%;
+    margin-left: -20px;
+}
+
+.title-underline {
+    border-bottom: solid #000000 1px;
+    width: 97%;
+    margin-top: 3px;
+}
+
 .site-header {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -16,9 +29,11 @@ body {
 }
 
 #authors-comments {
-    background: url("../img/author_comments_bordemenur.png") no-repeat;
-    background-size: cover;
-    height: 317px;
+    background: url("../img/author_comments_border.png") no-repeat;
+    /*background-size: contain;*/
+    width: 201px;
+    height: 311px;
+
 }
 
 #authors-comments-title {
@@ -42,10 +57,12 @@ body {
     padding-right: 6px;
 }
 
-.sidebar-text {
+.sidebar-list {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1em;
     font-weight: bold;
+    list-style: none !important;
+    margin: 0 !important;
 }
 
 .sidebar-title {

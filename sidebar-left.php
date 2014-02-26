@@ -13,7 +13,9 @@
 
     <aside id="recent" class="widget">
         <h2 class="sidebar-title">MEST LÄSTA</h2>
-        <ul class="sidebar-text">
+
+        <div class="title-underline"></div>
+        <ul class="sidebar-list">
             <li><a href="http://localhost/wordpress/?p=26" title="Look Artikel 2">Todo 1</a></li>
             <li><a href="http://localhost/wordpress/?p=6" title="Look lorem ipsum">Todo 2</a></li>
         </ul>
@@ -21,20 +23,22 @@
 
     <aside id="recent" class="widget">
         <h2 class="sidebar-title">SENAST TILLAGDA</h2>
-        <ul class="sidebar-text">
+
+        <div class="title-underline"></div>
+        <ul class="sidebar-list">
             <?php
             //            visa senaste publicerade artiklar:
             $args = array('numberposts' => '5', 'category' => get_cat_ID('artiklar'));
             $recent_posts = wp_get_recent_posts($args);
             foreach ($recent_posts as $recent) {
-                echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="Look ' . esc_attr($recent["post_title"]) . '" >' . $recent["post_title"] . '</a> </li> ';
+                echo '<li><img src="'.get_bloginfo('template_directory').'/img/list_marker.png"/><a href="' . get_permalink($recent["ID"]) . '" title="Look ' . esc_attr($recent["post_title"]) . '" >' . $recent["post_title"] . '</a> </li> ';
             }
             ?>
         </ul>
     </aside>
 
     <aside id="authors-comments" class="widget">
-            <div id="authors-comments-title">FÖRFATTARNA KOMMENTERAR</div>
+        <div id="authors-comments-title">FÖRFATTARNA KOMMENTERAR</div>
         <div id="authors-comments-body">Lite statisk text som ligger här under tiden, du vet.</div>
         <img src="<?php bloginfo('template_directory'); ?>/img/authors.png" alt=""/>
     </aside>
