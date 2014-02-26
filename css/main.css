@@ -2,6 +2,11 @@ body {
     /*font-size: 160% !important;*/
 }
 
+@font-face {
+    font-family: 'FuturaExtended';
+    src: url('../fonts/FuturaExtended.ttf');
+}
+
 .sidebar-separator {
     position: absolute;
     border-left: solid #000000 1px;
@@ -26,6 +31,50 @@ body {
 
 #site-navigation {
     float: left;
+}
+
+#phone {
+    background: url('../img/phone.png') no-repeat;
+    /*background-size: contain;*/
+    width: 228px;
+    height: 834px;
+}
+
+#phone-float-title {
+    /*TODO ersätt font med sg cheltenham old style*/
+    font-family: serif;
+    font-size: 1.5em;
+    line-height: 1.2;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+#phone-seperator {
+    margin-top: -5px;
+   padding-left: 32px;
+}
+
+#phone-title {
+    font-family: 'FuturaExtended', Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 1.8em;
+    line-height: 1.2;
+    color: white;
+    text-align: center;
+    padding-top: 125px;
+    padding-left: 12px;
+}
+
+#phone-body {
+    font-family: 'FuturaExtended', Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    color: white;
+    padding-top: 15px;
+    padding-left: 40px;
 }
 
 #authors-comments {
