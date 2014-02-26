@@ -33,6 +33,29 @@ body {
     float: left;
 }
 
+.tag-list {
+
+}
+
+.tag-list-item  {
+    display: inline;
+    padding-left: 10px;
+}
+
+.tag-list-item a {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: deepskyblue !important;
+}
+
+.tag-list-separator {
+    border-left: solid #000000 1px;
+    height: 100%;
+    display: inline;
+    margin-left: 10px;
+}
+
 #phone {
     background: url('../img/phone.png') no-repeat;
     /*background-size: contain;*/
@@ -137,11 +160,13 @@ body {
 }
 
 .tags-links {
-    color: lightskyblue !important;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
 }
 
 .tags-links a {
-    color: lightskyblue !important;
+    color: deepskyblue !important;
 }
 
 /*.content-area {*/
