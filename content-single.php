@@ -52,12 +52,12 @@
 
         } // end check for categories on this blog
 
-        printf(
-            $meta_text,
-            $category_list,
-            $tag_list,
-            get_permalink()
-        );
+//        printf(
+//            $meta_text,
+//            $category_list,
+//            $tag_list,
+//            get_permalink()
+//        );
         ?>
 
         <?php edit_post_link(__('Edit', 'innovation1000'), '<span class="edit-link">', '</span>'); ?>
