@@ -2,7 +2,7 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package test123123
+ * @package innovation1000
  */
 ?>
 	<div id="secondary" class="widget-area sidebar-right col-md-3 hidden-sm hidden-xs" role="complementary">

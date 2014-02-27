@@ -2,7 +2,7 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package test123123
+ * @package innovation1000
  */
 ?>
 <div id="secondary" class="widget-area sidebar-left col-md-3 col-sm-4 hidden-xs" role="complementary">
@@ -31,7 +31,7 @@
             $args = array('numberposts' => '5', 'category' => get_cat_ID('artiklar'));
             $recent_posts = wp_get_recent_posts($args);
             foreach ($recent_posts as $recent) {
-                echo '<li><img src="'.get_bloginfo('template_directory').'/img/list_marker.png"/><a href="' . get_permalink($recent["ID"]) . '" title="Look ' . esc_attr($recent["post_title"]) . '" >' . $recent["post_title"] . '</a> </li> ';
+                echo '<li><img src="' . get_bloginfo('template_directory') . '/img/list_marker.png"/><a href="' . get_permalink($recent["ID"]) . '" title="Look ' . esc_attr($recent["post_title"]) . '" >' . $recent["post_title"] . '</a> </li> ';
             }
             ?>
         </ul>

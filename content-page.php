@@ -2,23 +2,25 @@
 /**
  * The template used for displaying page content in page.php
  *
- * @package test123123
+ * @package innovation1000
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-	</header><!-- .entry-header -->
+    <header class="entry-header">
+        <h1 class="entry-title"><?php the_title(); ?></h1>
+    </header>
+    <!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'test123123' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-	<?php edit_post_link( __( 'Edit', 'test123123' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+    <div class="entry-content">
+        <?php the_content(); ?>
+        <?php
+        wp_link_pages(array(
+            'before' => '<div class="page-links">' . __('Pages:', 'innovation1000'),
+            'after' => '</div>',
+        ));
+        ?>
+    </div>
+    <!-- .entry-content -->
+    <?php edit_post_link(__('Edit', 'innovation1000'), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>'); ?>
 </article><!-- #post-## -->

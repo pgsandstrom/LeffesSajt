@@ -26,7 +26,7 @@ get_header(); ?>
                  */
                 get_template_part('content', get_post_format());
             endwhile;
-            test123123_paging_nav(); //
+            innovation1000_paging_nav(); //
         else :
             get_template_part('content', 'none');
         endif; ?>

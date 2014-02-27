@@ -7,12 +7,12 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package test123123
+ * @package innovation1000
  */
 
 get_header(); ?>
 <div id="primary" class="container content-area">
-<?php get_sidebar('left'); ?>
+    <?php get_sidebar('left'); ?>
     <main id="main" class="site-main col-md-6 col-sm-8 col-xs-12" role="main">
 
         <?php while (have_posts()) : the_post(); ?>
@@ -30,7 +30,7 @@ get_header(); ?>
 
     </main>
     <!-- #main -->
-<?php get_sidebar('right'); ?>
+    <?php get_sidebar('right'); ?>
 </div><!-- #primary -->
 
 <?php get_sidebar(); ?>

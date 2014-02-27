@@ -4,7 +4,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package test123123
+ * @package innovation1000
  */
 ?>
 
@@ -13,9 +13,9 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 <!--
-			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'test123123' ), 'WordPress' ); ?></a>
+			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'innovation1000' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'test123123' ), 'test123123', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<?php printf( __( 'Theme: %1$s by %2$s.', 'innovation1000' ), 'innovation1000', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
 -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
