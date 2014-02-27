@@ -5,7 +5,7 @@
  * @package test123123
  */
 ?>
-	<div id="secondary" class="widget-area sidebar-right col-md-3 hidden-sm" role="complementary">
+	<div id="secondary" class="widget-area sidebar-right col-md-3 hidden-sm hidden-xs" role="complementary">
         <aside id="phone" class="widget">
             <div id="phone-float-title">Tips om innovation i mobilen varje dag!</div>
             <div id="phone-title">Dagens tips</div>
