@@ -16,24 +16,35 @@
 
         <div class="title-underline"></div>
         <ul class="sidebar-list">
-            <li><a href="http://localhost/wordpress/?p=26" title="Look Artikel 2">Todo 1</a></li>
-            <li><a href="http://localhost/wordpress/?p=6" title="Look lorem ipsum">Todo 2</a></li>
+            <?php if (function_exists('get_most_viewed')): ?>
+                <?php get_most_viewed(); ?>
+            <?php endif; ?>
         </ul>
     </aside>
 
     <aside id="recent" class="widget">
-        <h2 class="sidebar-title">SENAST TILLAGDA</h2>
+        <h2 class="sidebar-title">MEST KOMMENTERADE</h2>
 
         <div class="title-underline"></div>
         <ul class="sidebar-list">
             <?php
-            //            visa senaste publicerade artiklar:
-            $args = array('numberposts' => '5', 'category' => get_cat_ID('artiklar'));
-            $recent_posts = wp_get_recent_posts($args);
-            foreach ($recent_posts as $recent) {
-                echo '<li><img src="' . get_bloginfo('template_directory') . '/img/list_marker.png"/><a href="' . get_permalink($recent["ID"]) . '" title="Look ' . esc_attr($recent["post_title"]) . '" >' . $recent["post_title"] . '</a> </li> ';
-            }
+            $popular = new WP_Query( array(
+                'post_type'             => array( 'post' ),
+                'showposts'             => 5,
+                'cat'                   => 'MyCategory',
+                'ignore_sticky_posts'   => true,
+                'orderby'               => 'comment_count',
+                'order'                 => 'dsc',
+//                'date_query' => array(
+//                    array(
+//                        'after' => '1 week ago',
+//                    ),
+//                ),
+            ) );
             ?>
+            <?php while ( $popular->have_posts() ): $popular->the_post(); ?>
+                <div><a href="<?php echo get_permalink( $popular->id ); ?>"> <?php the_title() ?></a></div>
+            <?php endwhile; ?>
         </ul>
     </aside>
 
