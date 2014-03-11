@@ -10,8 +10,6 @@ get_header(); ?>
 <div id="primary" class="container content-area">
     <?php get_sidebar('left'); ?>
     <main id="main" class="site-main col-md-6 col-sm-8 col-xs-12" role="main">
-        <div class="sidebar-separator">
-        </div>
 
         <?php if (have_posts()) : ?>
 

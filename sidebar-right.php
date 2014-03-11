@@ -5,11 +5,8 @@
  * @package innovation1000
  */
 ?>
-	<div id="secondary" class="widget-area sidebar-right col-md-3 hidden-sm hidden-xs" role="complementary">
-        <aside id="phone" class="widget">
-            <div id="phone-float-title">Tips om innovation i mobilen varje dag!</div>
-            <div id="phone-title">Dagens tips</div>
-            <img id="phone-seperator" src="<?php bloginfo('template_directory'); ?>/img/phone_line.png" alt=""/>
-            <div id="phone-body">Lite statisk text som ligger här under tiden, du vet.</div>
+	<div id="sidebar-right" class="widget-area sidebar-right col-md-3 hidden-sm hidden-xs" role="complementary">
+        <aside class="widget">
+
         </aside>
-	</div><!-- #secondary -->
+	</div><!-- #sidebar-right -->

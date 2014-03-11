@@ -7,17 +7,39 @@ body {
     src: url('../fonts/FuturaExtended.ttf');
 }
 
-.sidebar-separator {
-    position: absolute;
-    border-left: solid #000000 1px;
-    height: 100%;
-    margin-left: -20px;
+.cloud-title {
 }
 
-.title-underline {
-    border-bottom: solid #000000 1px;
-    width: 97%;
-    margin-top: 3px;
+.cloud-title-yellow {
+    background-color: gold;
+}
+
+.cloud-title-green {
+    background-color: green;
+}
+
+.cloud-body {
+    padding: 10px;
+    margin-left: 0px;
+    height: 200px;
+}
+
+.cloud-body li {
+    background-color: white;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.cloud-body-yellow {
+    background-color: yellow;
+}
+
+.cloud-body-green {
+    background-color: lightgreen;
 }
 
 .site-header {
@@ -37,7 +59,7 @@ body {
 
 }
 
-.tag-list-item  {
+.tag-list-item {
     display: inline;
     padding-left: 10px;
 }
@@ -56,31 +78,8 @@ body {
     margin-left: 10px;
 }
 
-#phone {
-    background: url('../img/phone.png') no-repeat;
-    /*background-size: contain;*/
-    width: 228px;
-    height: 834px;
-}
-
-#phone-float-title {
-    /*TODO ersätt font med sg cheltenham old style*/
-    font-family: serif;
-    font-size: 1.5em;
-    line-height: 1.2;
-    font-weight: bold;
-    font-style: italic;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 15px;
-}
-
-#phone-seperator {
-    margin-top: -5px;
-   padding-left: 32px;
-}
-
 #phone-title {
+    /*TODO ta bort*/
     font-family: 'FuturaExtended', Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 1.8em;
     line-height: 1.2;
@@ -90,59 +89,30 @@ body {
     padding-left: 12px;
 }
 
-#phone-body {
-    font-family: 'FuturaExtended', Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 1.2em;
-    letter-spacing: 0.5px;
-    line-height: 1.2;
-    color: white;
-    padding-top: 15px;
-    padding-left: 40px;
-}
-
-#authors-comments {
-    background: url("../img/author_comments_border.png") no-repeat;
-    /*background-size: contain;*/
-    width: 201px;
-    height: 311px;
-
-}
-
-#authors-comments-title {
-    /*TODO font size in px so zoom doesnt mess it up?*/
-    /*TODO ersätt font med sg cheltenham old style*/
-    font-family: serif;
-    font-size: 0.75em;
-    font-weight: bold;
-    font-style: italic;
-    color: white;
-    text-align: center;
-    padding-top: 6px;
-}
-
-#authors-comments-body {
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 1em;
-    font-weight: bold;
-    padding-top: 8px;
-    padding-left: 12px;
-    padding-right: 6px;
-}
-
 .sidebar-list {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1em;
     font-weight: bold;
-    list-style: none !important;
-    margin: 0 !important;
+    margin-left: 20px;
 }
+
+/*.sidebar-list a {*/
+    /*margin-left: 0px;*/
+/*}*/
 
 .sidebar-title {
     /*TODO ersätt font med sg cheltenham old style*/
     font-family: serif;
     font-size: 1em;
     font-weight: bold;
-    font-style: italic;
+}
+
+#sidebar-left {
+    background-color: yellow;
+}
+
+#sidebar-right {
+    background-color: lightgreen;
 }
 
 .entry-title {
@@ -150,8 +120,7 @@ body {
     font-family: serif;
     font-size: 2.6em;
     font-weight: bold;
-    font-style: italic;
-    background: url("../img/title_background.png") no-repeat;
+    /*font-style: italic;*/
 }
 
 .entry-content {
@@ -168,20 +137,3 @@ body {
 .tags-links a {
     color: deepskyblue !important;
 }
-
-/*.content-area {*/
-/*width: 960px;*/
-/*margin: 0 auto;*/
-/*}*/
-
-/*@media (max-width: 1000px) {*/
-/*.sidebar-right {*/
-/*display:none;*/
-/*}*/
-/*}*/
-
-/*@media (max-width: 1000px) {*/
-/*.content-area {*/
-/*width:50%;*/
-/*}*/
-/*}*/

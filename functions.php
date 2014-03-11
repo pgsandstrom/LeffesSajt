@@ -17,7 +17,7 @@ function latest_published_articles()
     $args = array('numberposts' => '5', 'category' => get_cat_ID('artiklar'));
     $recent_posts = wp_get_recent_posts($args);
     foreach ($recent_posts as $recent) {
-        echo '<li><img src="' . get_bloginfo('template_directory') . '/img/list_marker.png"/><a href="' . get_permalink($recent["ID"]) . '" title="Look ' . esc_attr($recent["post_title"]) . '" >' . $recent["post_title"] . '</a> </li> ';
+        echo '<li><a href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a> </li> ';
     }
 }
 
@@ -39,17 +39,9 @@ function most_common_tags_in_last_days()
             'number' => 28,
             'include' => $term_ids,
         ));
-        echo '<ul class="tag-list">';
-        $first = true;
         foreach ((array)$tags as $tag) {
-            if ($first) {
-                $first = false;
-            } else {
-                echo '<div class="tag-list-separator"></div>';
-            }
-            echo '<li class="tag-list-item"><a href="' . get_tag_link($tag->term_id) . '" rel="tag">' . $tag->name . '</a></li>';
+            echo '<li><a href="' . get_tag_link($tag->term_id) . '" rel="tag">' . $tag->name . '</a></li>';
         }
-        echo '</ul>';
     }
 }
 
@@ -70,7 +62,7 @@ function most_commented_articles() {
             ) );
             while ( $popular->have_posts() ): $popular->the_post();
 
-                echo  '<div><a href="' . get_permalink( $popular->id ) . '">' .  get_the_title() . '</a></div>';
+                echo  '<li><a href="' . get_permalink( $popular->id ) . '">' .  get_the_title() . '</a></li>';
 
 
              endwhile;

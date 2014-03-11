@@ -46,15 +46,6 @@
         </nav>
         <!-- #site-navigation -->
 
-        <br style="clear:both"/>
-
-        <div id="tag list">
-            <?php $wpdb->show_errors(); ?>
-            <?php
-            most_common_tags_in_last_days();
-            ?>
-        </div>
-
     </header>
     <!-- #masthead -->
 
