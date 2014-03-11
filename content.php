@@ -6,6 +6,32 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
+        <div >
+
+            <span class="category">
+                <?php
+                foreach((get_the_category()) as $category) {
+                    $category_link = get_category_link( $category->id );
+                    echo '<a href="' . esc_url($category_link) . '">' . $category->cat_name . '</a>';
+                }
+                ?>
+            </span>
+
+            <?php innovation1000_posted_on(); ?>
+
+            <?php
+            /* translators: used between list items, there is a space after the comma */
+            $tags_list = get_the_tag_list('', __(', ', 'innovation1000'));
+            if ($tags_list) :
+                ?>
+                <span class="tag">
+                <?php printf(__('%1$s', 'innovation1000'), $tags_list); ?>
+                </span>
+            <?php endif; // End if $tags_list ?>
+
+        </div>
+
+
         <h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
         <?php if ('post' == get_post_type()) : ?>
@@ -13,26 +39,9 @@
                 <!--
 			        <?php innovation1000_posted_on(); ?>
                 -->
-            </div><!-- .entry-meta -->
+            </div>
         <?php endif; ?>
     </header>
-    <!-- .entry-header -->
-
-
-    <div>
-        <?php if ('post' == get_post_type()) : // Hide category and tag text for pages on Search ?>
-            <?php
-            /* translators: used between list items, there is a space after the comma */
-            $tags_list = get_the_tag_list('', __(', ', 'innovation1000'));
-            if ($tags_list) :
-                ?>
-                <span class="tags-links">
-				<?php printf(__('%1$s', 'innovation1000'), $tags_list); ?>
-			</span>
-            <?php endif; // End if $tags_list ?>
-        <?php endif; // End if 'post' == get_post_type() ?>
-
-    </div>
 
     <?php if (is_search()) : // Only display Excerpts for Search ?>
         <div class="entry-summary">

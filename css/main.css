@@ -97,7 +97,7 @@ body {
 }
 
 /*.sidebar-list a {*/
-    /*margin-left: 0px;*/
+/*margin-left: 0px;*/
 /*}*/
 
 .sidebar-title {
@@ -128,12 +128,48 @@ body {
     font-size: 1.2em;
 }
 
-.tags-links {
+.category {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
+    background-color: orange;
+    padding: 2px 5px 2px 5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 
-.tags-links a {
-    color: deepskyblue !important;
+.category a {
+    color: white !important;
+}
+
+.posted-on {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    background-color: deepskyblue;
+    padding: 2px 5px 2px 5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    margin-left: 5px;
+}
+
+.posted-on a {
+    color: white !important;
+}
+
+.tag {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    background-color: orange;
+    padding: 2px 5px 2px 5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.tag a {
+    color: white !important;
 }
