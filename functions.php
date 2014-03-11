@@ -12,6 +12,70 @@ if (!isset($content_width)) {
     $content_width = 640; /* pixels */
 }
 
+function latest_published_articles()
+{
+    $args = array('numberposts' => '5', 'category' => get_cat_ID('artiklar'));
+    $recent_posts = wp_get_recent_posts($args);
+    foreach ($recent_posts as $recent) {
+        echo '<li><img src="' . get_bloginfo('template_directory') . '/img/list_marker.png"/><a href="' . get_permalink($recent["ID"]) . '" title="Look ' . esc_attr($recent["post_title"]) . '" >' . $recent["post_title"] . '</a> </li> ';
+    }
+}
+
+function most_common_tags_in_last_days()
+{
+    //            Vanligaste taggarna senaste 30 dagarna. Se:
+    //             http://wordpress.stackexchange.com/questions/48557/display-list-of-most-used-tags-in-the-last-30-days
+    global $wpdb;
+    $term_ids = $wpdb->get_col("
+    SELECT term_id FROM $wpdb->term_taxonomy
+    INNER JOIN $wpdb->term_relationships ON $wpdb->term_taxonomy.term_taxonomy_id=$wpdb->term_relationships.term_taxonomy_id
+    INNER JOIN $wpdb->posts ON $wpdb->posts.ID = $wpdb->term_relationships.object_id
+    WHERE DATE_SUB(CURDATE(), INTERVAL 30 DAY) <= $wpdb->posts.post_date");
+
+    if (count($term_ids) > 0) {
+        $tags = get_tags(array(
+            'orderby' => 'count',
+            'order' => 'DESC',
+            'number' => 28,
+            'include' => $term_ids,
+        ));
+        echo '<ul class="tag-list">';
+        $first = true;
+        foreach ((array)$tags as $tag) {
+            if ($first) {
+                $first = false;
+            } else {
+                echo '<div class="tag-list-separator"></div>';
+            }
+            echo '<li class="tag-list-item"><a href="' . get_tag_link($tag->term_id) . '" rel="tag">' . $tag->name . '</a></li>';
+        }
+        echo '</ul>';
+    }
+}
+
+function most_commented_articles() {
+
+            $popular = new WP_Query( array(
+                'post_type'             => array( 'post' ),
+                'showposts'             => 5,
+                'cat'                   => 'MyCategory',
+                'ignore_sticky_posts'   => true,
+                'orderby'               => 'comment_count',
+                'order'                 => 'dsc',
+//                'date_query' => array(
+//                    array(
+//                        'after' => '1 week ago',
+//                    ),
+//                ),
+            ) );
+            while ( $popular->have_posts() ): $popular->the_post();
+
+                echo  '<div><a href="' . get_permalink( $popular->id ) . '">' .  get_the_title() . '</a></div>';
+
+
+             endwhile;
+}
+
 if (!function_exists('innovation1000_setup')) :
     /**
      * Sets up theme defaults and registers support for various WordPress features.

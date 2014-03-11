@@ -28,23 +28,8 @@
         <div class="title-underline"></div>
         <ul class="sidebar-list">
             <?php
-            $popular = new WP_Query( array(
-                'post_type'             => array( 'post' ),
-                'showposts'             => 5,
-                'cat'                   => 'MyCategory',
-                'ignore_sticky_posts'   => true,
-                'orderby'               => 'comment_count',
-                'order'                 => 'dsc',
-//                'date_query' => array(
-//                    array(
-//                        'after' => '1 week ago',
-//                    ),
-//                ),
-            ) );
+            most_commented_articles();
             ?>
-            <?php while ( $popular->have_posts() ): $popular->the_post(); ?>
-                <div><a href="<?php echo get_permalink( $popular->id ); ?>"> <?php the_title() ?></a></div>
-            <?php endwhile; ?>
         </ul>
     </aside>
 
