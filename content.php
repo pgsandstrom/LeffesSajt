@@ -6,12 +6,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
-        <div >
+        <div>
 
             <span class="category">
                 <?php
-                foreach((get_the_category()) as $category) {
-                    $category_link = get_category_link( $category->id );
+                foreach ((get_the_category()) as $category) {
+                    $category_link = get_category_link($category->id);
                     echo '<a href="' . esc_url($category_link) . '">' . $category->cat_name . '</a>';
                 }
                 ?>
@@ -20,14 +20,11 @@
             <?php innovation1000_posted_on(); ?>
 
             <?php
-            /* translators: used between list items, there is a space after the comma */
-            $tags_list = get_the_tag_list('', __(', ', 'innovation1000'));
+            $tags_list = get_the_tag_list('<span class="tag">', '</span><span class="tag">', '</span>');
             if ($tags_list) :
-                ?>
-                <span class="tag">
-                <?php printf(__('%1$s', 'innovation1000'), $tags_list); ?>
-                </span>
-            <?php endif; // End if $tags_list ?>
+                printf(__('%1$s', 'innovation1000'), $tags_list);
+            endif;
+            ?>
 
         </div>
 

@@ -7,7 +7,27 @@ body {
     src: url('../fonts/FuturaExtended.ttf');
 }
 
+.cloud-yellow {
+    background-color: yellow;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.cloud-green {
+    background-color: lightgreen;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
 .cloud-title {
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .cloud-title-yellow {
@@ -29,17 +49,17 @@ body {
     display: inline-block;
     padding: 5px;
     margin: 5px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .cloud-body-yellow {
-    background-color: yellow;
+
 }
 
 .cloud-body-green {
-    background-color: lightgreen;
+
 }
 
 .site-header {
@@ -53,22 +73,6 @@ body {
 
 #site-navigation {
     float: left;
-}
-
-.tag-list {
-
-}
-
-.tag-list-item {
-    display: inline;
-    padding-left: 10px;
-}
-
-.tag-list-item a {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-    font-size: 1.25em;
-    font-weight: bold;
-    color: deepskyblue !important;
 }
 
 .tag-list-separator {
@@ -108,10 +112,18 @@ body {
 }
 
 #sidebar-left {
+     padding-right: 0px;
+ }
+
+#sidebar-left aside {
     background-color: yellow;
 }
 
 #sidebar-right {
+    padding-left: 0px;
+}
+
+#sidebar-right aside{
     background-color: lightgreen;
 }
 
@@ -134,9 +146,9 @@ body {
     font-weight: bold;
     background-color: orange;
     padding: 2px 5px 2px 5px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .category a {
@@ -149,9 +161,9 @@ body {
     font-weight: bold;
     background-color: deepskyblue;
     padding: 2px 5px 2px 5px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     margin-left: 5px;
 }
 
@@ -165,9 +177,10 @@ body {
     font-weight: bold;
     background-color: orange;
     padding: 2px 5px 2px 5px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-right: 5px;
 }
 
 .tag a {
