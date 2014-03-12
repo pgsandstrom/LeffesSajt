@@ -8,14 +8,14 @@ body {
 }
 
 .cloud-yellow {
-    background-color: yellow;
+    background-color: #ffdf42;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
 
 .cloud-green {
-    background-color: lightgreen;
+    background-color: #39e678;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -31,11 +31,11 @@ body {
 }
 
 .cloud-title-yellow {
-    background-color: gold;
+    background-color: #ef9909;
 }
 
 .cloud-title-green {
-    background-color: green;
+    background-color: #39a861;
 }
 
 .cloud-body {
@@ -63,16 +63,56 @@ body {
 }
 
 .site-header {
-    padding-top: 20px;
+
     padding-bottom: 20px;
+    margin-bottom: 100px;
+}
+
+#header-container {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#site-navigation {
+    float: left;
+    width: 100%;
+    background: black;
+    height: 90px;
+    font-size: 1.3em;
+}
+
+.nav-menu {
+    float:right;
+    margin-top: 50px;
+    margin-right: 250px;
+    font-weight: bold;
+}
+
+.nav-menu li {
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.nav-menu li a {
+    color: white !important;
+}
+
+.site-branding {
+    position: absolute;
+    margin-top: 40px;
 }
 
 .site-title {
     float: left;
 }
 
-#site-navigation {
-    float: left;
+#authors {
+    position: absolute;
+    height:200px;
+    /*TODO fulhack*/
+    margin-top:10px;
+    margin-left:-260px;
+
 }
 
 .tag-list-separator {
@@ -105,7 +145,6 @@ body {
 /*}*/
 
 .sidebar-title {
-    /*TODO ersätt font med sg cheltenham old style*/
     font-family: serif;
     font-size: 1em;
     font-weight: bold;
@@ -116,7 +155,7 @@ body {
  }
 
 #sidebar-left aside {
-    background-color: yellow;
+    background-color: #ffdf42;
 }
 
 #sidebar-right {
@@ -124,7 +163,7 @@ body {
 }
 
 #sidebar-right aside{
-    background-color: lightgreen;
+    background-color: #39e678;
 }
 
 .entry-title {
@@ -144,7 +183,7 @@ body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
-    background-color: orange;
+    background-color: #ef9909;
     padding: 2px 5px 2px 5px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -159,7 +198,7 @@ body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
-    background-color: deepskyblue;
+    background-color: #2ac6c7;
     padding: 2px 5px 2px 5px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -175,7 +214,7 @@ body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
-    background-color: orange;
+    background-color: #ef9909;
     padding: 2px 5px 2px 5px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;

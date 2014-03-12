@@ -28,23 +28,30 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-    <header id="masthead" class="site-header container " role="banner">
-        <div class="site-branding">
-            <h1 class="site-title">
-                <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                    <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png"/>
-                </a>
-            </h1>
+    <header id="masthead" class="site-header container" role="banner">
+
+        <div id="header-container">
+
+
+            <nav id="site-navigation" class="" role="navigation">
+                <h1 class="menu-toggle"><?php _e('Menu', 'innovation1000'); ?></h1>
+                <a class="skip-link screen-reader-text"
+                   href="#content"><?php _e('Skip to content', 'innovation1000'); ?></a>
+
+                <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+            </nav>
+
+            <div class="site-branding">
+                <h1 class="site-title">
+                    <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png"/>
+                    </a>
+                </h1>
+            </div>
+
+            <img id="authors" src="<?php echo get_bloginfo('template_directory'); ?>/img/authors_wide.png"/>
+
         </div>
-
-        <nav id="site-navigation" class="" role="navigation">
-            <h1 class="menu-toggle"><?php _e('Menu', 'innovation1000'); ?></h1>
-            <a class="skip-link screen-reader-text"
-               href="#content"><?php _e('Skip to content', 'innovation1000'); ?></a>
-
-            <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
-        </nav>
-        <!-- #site-navigation -->
 
     </header>
     <!-- #masthead -->
