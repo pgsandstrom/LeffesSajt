@@ -43,6 +43,7 @@ get_header(); ?>
     <?php get_sidebar('left'); ?>
 
     <main id="main" class="site-main col-md-6 col-sm-8 col-xs-12" role="main">
+
         <?php
         $args = array(
             'category_name' => 'artiklar',

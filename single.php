@@ -13,9 +13,7 @@ get_header(); ?>
             <?php while (have_posts()) : the_post(); ?>
 
                 <?php get_template_part('content', 'single'); ?>
-                hej
                 <?php if(function_exists('the_views')) { the_views(); } ?>
-                hej
                 <?php innovation1000_post_nav(); ?>
 
                 <?php

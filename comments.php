@@ -68,6 +68,10 @@ if (post_password_required()) {
         <p class="no-comments"><?php _e('Comments are closed.', 'innovation1000'); ?></p>
     <?php endif; ?>
 
-    <?php comment_form(); ?>
+    <?php
+    // "comment_notes_after" för att inte få massa info om vilka html-taggar man kan använda
+    comment_form(array(
+        'comment_notes_after' => ' ',
+    )); ?>
 
 </div><!-- #comments -->

@@ -32,6 +32,7 @@
 
         <div id="header-container">
 
+            <img id="authors" src="<?php echo get_bloginfo('template_directory'); ?>/img/authors_wide.png"/>
 
             <nav id="site-navigation" class="" role="navigation">
                 <h1 class="menu-toggle"><?php _e('Menu', 'innovation1000'); ?></h1>
@@ -42,14 +43,19 @@
             </nav>
 
             <div class="site-branding">
-                <h1 class="site-title">
-                    <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png"/>
-                    </a>
-                </h1>
-            </div>
 
-            <img id="authors" src="<?php echo get_bloginfo('template_directory'); ?>/img/authors_wide.png"/>
+                <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png"/>
+                </a>
+
+                <div class="site-title">
+                    <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                        <div>TUSEN TIPS</div>
+                        <div>OM INNOVATION</div>
+                    </a>
+                </div>
+
+            </div>
 
         </div>
 

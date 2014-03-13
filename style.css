@@ -65,6 +65,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     padding: 0;
     vertical-align: baseline;
 }
+
+html {
+    font-weight: 300;
+}
+
 html {
     font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
     overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
@@ -101,7 +106,7 @@ table { /* tables still need 'cellspacing="0"' in the markup */
     border-spacing: 0;
 }
 caption, th, td {
-    font-weight: normal;
+    /*font-weight: normal;*/
     text-align: left;
 }
 blockquote:before, blockquote:after,
@@ -131,7 +136,7 @@ input,
 select,
 textarea {
     color: #404040;
-    font-family: sans-serif;
+    font-family: 'Merriweather Sans';
     font-size: 16px;
     font-size: 1.6rem;
     line-height: 1.5;

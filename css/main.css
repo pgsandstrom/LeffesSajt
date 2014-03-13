@@ -1,10 +1,15 @@
-body {
-    /*font-size: 160% !important;*/
-}
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300,800);
 
-@font-face {
-    font-family: 'FuturaExtended';
-    src: url('../fonts/FuturaExtended.ttf');
+/*@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300);*/
+
+/*@font-face {*/
+/*font-family: 'FuturaExtended';*/
+/*src: url('../fonts/FuturaExtended.ttf');*/
+/*}*/
+
+body html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    font-family: 'Merriweather Sans';
+    font-weight: 300;
 }
 
 .cloud-yellow {
@@ -24,7 +29,10 @@ body {
 .cloud-title {
     color: white;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -63,7 +71,6 @@ body {
 }
 
 .site-header {
-
     padding-bottom: 20px;
     margin-bottom: 100px;
 }
@@ -74,17 +81,17 @@ body {
 }
 
 #site-navigation {
-    float: left;
+    float: right;
     width: 100%;
     background: black;
     height: 90px;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .nav-menu {
-    float:right;
-    margin-top: 50px;
-    margin-right: 250px;
+    float: right;
+    margin-top: 55px;
+    margin-right: 220px;
     font-weight: bold;
 }
 
@@ -98,63 +105,53 @@ body {
 }
 
 .site-branding {
+    float: left;
     position: absolute;
     margin-top: 40px;
 }
 
+.site-branding a {
+    float: left;
+}
+
 .site-title {
     float: left;
+    font-size: 2em;
+    font-weight: 800;
+    padding-left: 10px;
+    margin-top: 60px;
+}
+
+.site-title div {
+    line-height: 36px;
+
 }
 
 #authors {
     position: absolute;
-    height:200px;
+    height: 200px;
     /*TODO fulhack*/
-    margin-top:10px;
-    margin-left:-260px;
+    margin-top: 10px;
+    margin-left: 860px;
 
 }
 
-.tag-list-separator {
-    border-left: solid #000000 1px;
-    height: 100%;
-    display: inline;
-    margin-left: 10px;
+.sidebar-body {
+    font-size: 0.8em;
+    padding-top: 5px;
+    margin-left: 15px;
 }
-
-#phone-title {
-    /*TODO ta bort*/
-    font-family: 'FuturaExtended', Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 1.8em;
-    line-height: 1.2;
-    color: white;
-    text-align: center;
-    padding-top: 125px;
-    padding-left: 12px;
-}
-
-.sidebar-list {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    margin-left: 20px;
-}
-
-/*.sidebar-list a {*/
-/*margin-left: 0px;*/
-/*}*/
 
 .sidebar-title {
-    font-family: serif;
-    font-size: 1em;
+    font-size: 0.75em;
     font-weight: bold;
 }
 
 #sidebar-left {
-     padding-right: 0px;
- }
+    padding-right: 0px;
+}
 
-#sidebar-left aside {
+#sidebar-left .widget {
     background-color: #ffdf42;
 }
 
@@ -162,25 +159,26 @@ body {
     padding-left: 0px;
 }
 
-#sidebar-right aside{
+#sidebar-right .widget {
     background-color: #39e678;
 }
 
+.widget {
+    padding: 12px 5px 2px 12px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
 .entry-title {
-    /*TODO ersätt font med sg cheltenham old style*/
-    font-family: serif;
     font-size: 2.6em;
-    font-weight: bold;
-    /*font-style: italic;*/
 }
 
 .entry-content {
-    font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 1.2em;
 }
 
 .category {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
     background-color: #ef9909;
@@ -195,7 +193,6 @@ body {
 }
 
 .posted-on {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
     background-color: #2ac6c7;
@@ -211,7 +208,6 @@ body {
 }
 
 .tag {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
     background-color: #ef9909;

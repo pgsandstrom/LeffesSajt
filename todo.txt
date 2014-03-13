@@ -1,0 +1,15 @@
+TODO: räkna antalet views
+för att upptäcka bottar:
+
+$bots = array('wordpress', 'googlebot', 'google', 'msnbot', 'ia_archiver', 'lycos', 'jeeves', 'scooter', 'fast-webcrawler', 'slurp@inktomi', 'turnitinbot', 'technorati',
+    'yahoo', 'findexa', 'findlinks', 'gaisbo', 'zyborg', 'surveybot', 'bloglines', 'blogsearch', 'pubsub', 'syndic8', 'userland', 'gigabot', 'become.com');
+if (!current_user_can('publish_posts') &&
+    !empty($_SERVER['HTTP_USER_AGENT']) &&
+    !preg_match('/' . implode('|', $bots) . '/i', $_SERVER['HTTP_USER_AGENT'])
+) {
+
+}
+
+TODO: google analytics
+
+TODO: Man kan inte klicka på hela headern, biten till vänster hamnar under titelns div...
