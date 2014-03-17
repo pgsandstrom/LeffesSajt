@@ -17,3 +17,17 @@ TODO: Man kan inte klicka på hela headern, biten till vänster hamnar under tit
 TODO: Ändra hårdkodning av "tips" till "dagens tips"
 
 TODO: Visa allt på förstasidan.
+
+TODO: Fixa för alla skärmstorlekar.
+
+TODO: Fixa cloud även när man är i artikeln.
+
+TODO: 404-sida.
+
+TOOO: färgerna på vänster- och högerkolumn
+
+TODO: Hur ska author-bilden skäras av när man är inne på artiklar?
+
+TODO: Ska datumen vara klickbara?
+
+TODO:
