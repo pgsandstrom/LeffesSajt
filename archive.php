@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Archive pages.
+ * The template for displaying Archive pages. Used for example when the user clicks on a tag.
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
@@ -9,8 +9,11 @@
 
 get_header(); ?>
 
-<section id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+<section id="primary" class="container">
+
+    <?php get_sidebar('left'); ?>
+
+    <main id="main" class="site-main col-md-6 col-sm-8 col-xs-12" role="main">
 
         <?php if (have_posts()) : ?>
 
@@ -18,10 +21,16 @@ get_header(); ?>
                 <h1 class="page-title">
                     <?php
                     if (is_category()) :
-                        single_cat_title(); elseif (is_tag()) :
-                        single_tag_title(); elseif (is_author()) :
-                        printf(__('Author: %s', 'innovation1000'), '<span class="vcard">' . get_the_author() . '</span>'); elseif (is_day()) :
-                        printf(__('Day: %s', 'innovation1000'), '<span>' . get_the_date() . '</span>'); elseif (is_month()) :
+                        echo 'hej';
+                        single_cat_title(); //
+                    elseif (is_tag()) :
+                        echo '<span class="tag-item">';
+                        single_tag_title(); //
+                        echo '</span>'; elseif (is_author()) :
+                        printf(__('Author: %s', 'innovation1000'), '<span class="vcard">' . get_the_author() . '</span>'); //
+                    elseif (is_day()) :
+                        printf(__('Day: %s', 'innovation1000'), '<span>' . get_the_date() . '</span>'); //
+                    elseif (is_month()) :
                         printf(__('Month: %s', 'innovation1000'), '<span>' . get_the_date(_x('F Y', 'monthly archives date format', 'innovation1000')) . '</span>'); elseif (is_year()) :
                         printf(__('Year: %s', 'innovation1000'), '<span>' . get_the_date(_x('Y', 'yearly archives date format', 'innovation1000')) . '</span>'); elseif (is_tax('post_format', 'post-format-aside')) :
                         _e('Asides', 'innovation1000'); elseif (is_tax('post_format', 'post-format-gallery')) :

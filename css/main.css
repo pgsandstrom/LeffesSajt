@@ -178,17 +178,18 @@ body html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, b
     font-size: 1.2em;
 }
 
-.category {
+.category-item {
     font-size: 1.25em;
     font-weight: bold;
     background-color: #ef9909;
+    color: white !important;
     padding: 2px 5px 2px 5px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
 
-.category a {
+.category-item a {
     color: white !important;
 }
 
@@ -207,10 +208,11 @@ body html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, b
     color: white !important;
 }
 
-.tag {
+.tag-item {
     font-size: 1.25em;
     font-weight: bold;
     background-color: #ef9909;
+    color: white !important;
     padding: 2px 5px 2px 5px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -218,6 +220,6 @@ body html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, b
     margin-right: 5px;
 }
 
-.tag a {
+.tag-item a {
     color: white !important;
 }

@@ -13,3 +13,7 @@ if (!current_user_can('publish_posts') &&
 TODO: google analytics
 
 TODO: Man kan inte klicka på hela headern, biten till vänster hamnar under titelns div...
+
+TODO: Ändra hårdkodning av "tips" till "dagens tips"
+
+TODO: Visa allt på förstasidan.

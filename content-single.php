@@ -1,5 +1,6 @@
 <?php
 /**
+ * Used for example when viewing a single post.
  * @package innovation1000
  */
 ?>
@@ -9,7 +10,23 @@
         <h1 class="entry-title"><?php the_title(); ?></h1>
 
         <div class="entry-meta">
+            <span class="category-item">
+                <?php
+                foreach ((get_the_category()) as $category) {
+                    $category_link = get_category_link($category->id);
+                    echo '<a href="' . esc_url($category_link) . '">' . $category->cat_name . '</a>';
+                }
+                ?>
+            </span>
+
             <?php innovation1000_posted_on(); ?>
+
+            <?php
+            $tags_list = get_the_tag_list('<span class="tag-item">', '</span><span class="tag-item">', '</span>');
+            if ($tags_list) :
+                printf(__('%1$s', 'innovation1000'), $tags_list);
+            endif;
+            ?>
         </div>
         <!-- .entry-meta -->
     </header>

@@ -1,5 +1,7 @@
 <?php
 /**
+ * Used for example when displaying an article in the "main" view.
+ *
  * @package innovation1000
  */
 ?>
@@ -7,8 +9,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
         <div>
-
-            <span class="category">
+<!--            TODO denna finns både här och i content-single-->
+            <span class="category-item">
                 <?php
                 foreach ((get_the_category()) as $category) {
                     $category_link = get_category_link($category->id);
@@ -20,7 +22,7 @@
             <?php innovation1000_posted_on(); ?>
 
             <?php
-            $tags_list = get_the_tag_list('<span class="tag">', '</span><span class="tag">', '</span>');
+            $tags_list = get_the_tag_list('<span class="tag-item">', '</span><span class="tag-item">', '</span>');
             if ($tags_list) :
                 printf(__('%1$s', 'innovation1000'), $tags_list);
             endif;
