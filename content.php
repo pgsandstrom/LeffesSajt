@@ -9,13 +9,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
         <div>
-<!--            TODO denna finns både här och i content-single-->
+            <!--            TODO denna finns både här och i content-single-->
             <span class="category-item">
                 <?php
-                foreach ((get_the_category()) as $category) {
-                    $category_link = get_category_link($category->id);
-                    echo '<a href="' . esc_url($category_link) . '">' . $category->cat_name . '</a>';
-                }
+                the_category(', ')
                 ?>
             </span>
 

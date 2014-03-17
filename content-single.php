@@ -12,10 +12,7 @@
         <div class="entry-meta">
             <span class="category-item">
                 <?php
-                foreach ((get_the_category()) as $category) {
-                    $category_link = get_category_link($category->id);
-                    echo '<a href="' . esc_url($category_link) . '">' . $category->cat_name . '</a>';
-                }
+                the_category(', ')
                 ?>
             </span>
 
@@ -69,12 +66,12 @@
 
         } // end check for categories on this blog
 
-//        printf(
-//            $meta_text,
-//            $category_list,
-//            $tag_list,
-//            get_permalink()
-//        );
+        //        printf(
+        //            $meta_text,
+        //            $category_list,
+        //            $tag_list,
+        //            get_permalink()
+        //        );
         ?>
 
         <?php edit_post_link(__('Edit', 'innovation1000'), '<span class="edit-link">', '</span>'); ?>
