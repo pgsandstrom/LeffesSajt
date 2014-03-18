@@ -7,6 +7,6 @@
 ?>
 	<div id="sidebar-right" class="widget-area sidebar-right col-md-3 hidden-sm hidden-xs" role="complementary">
         <aside class="widget">
-            TEMP
+
         </aside>
 	</div><!-- #sidebar-right -->

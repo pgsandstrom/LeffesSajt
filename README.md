@@ -20,7 +20,7 @@ Troubleshooting
 
 Kategorier hårdkodade
 ---
-Jag har hårdkodat två kategorier: "tips" och "artiklar". Alla posts ska tillhöra någon av dessa!
+Jag har hårdkodat två kategorier: "dagens tips" och "artiklar". Alla posts ska tillhöra någon av dessa!
 
 Json Api
 ---

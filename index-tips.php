@@ -11,7 +11,7 @@ get_header(); ?>
     <main id="main" class="site-main col-md-6 col-sm-8 col-xs-12" role="main">
         <?php
         $args = array(
-            'category_name' => 'tips',
+            'category_name' => 'dagens tips',
             'paged' => $paged
 //        ,
 //            'posts_per_page' => 5

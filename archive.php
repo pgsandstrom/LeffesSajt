@@ -8,7 +8,30 @@
  */
 
 get_header(); ?>
+<div class="container cloud-container">
 
+    <div class="col-md-6">
+        <div class="cloud-yellow">
+            <div class="cloud-title cloud-title-yellow">
+                TÄNK SÅ HÄR
+            </div>
+            <ul class="cloud-body cloud-body-yellow">
+                <?php latest_published_articles(); ?>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="cloud-green">
+            <div class="cloud-title cloud-title-green">
+                TÄNK SÅ HÄR
+            </div>
+            <ul class="cloud-body cloud-body-green">
+                <?php most_common_tags_in_last_days(); ?>
+            </ul>
+        </div>
+    </div>
+</div>
 <section id="primary" class="container">
 
     <?php get_sidebar('left'); ?>
@@ -21,12 +44,16 @@ get_header(); ?>
                 <h1 class="page-title">
                     <?php
                     if (is_category()) :
-                        echo 'hej';
+                        echo '<span class="category-item">';
+                        echo 'Alla ';
                         single_cat_title(); //
+                        echo '</span>'; //
                     elseif (is_tag()) :
                         echo '<span class="tag-item">';
+                        echo 'Allt om ';
                         single_tag_title(); //
-                        echo '</span>'; elseif (is_author()) :
+                        echo '</span>'; //
+                    elseif (is_author()) :
                         printf(__('Author: %s', 'innovation1000'), '<span class="vcard">' . get_the_author() . '</span>'); //
                     elseif (is_day()) :
                         printf(__('Day: %s', 'innovation1000'), '<span>' . get_the_date() . '</span>'); //
@@ -81,5 +108,4 @@ get_header(); ?>
     <!-- #main -->
 </section><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

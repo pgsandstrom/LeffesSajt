@@ -10,24 +10,23 @@ if (!current_user_can('publish_posts') &&
 
 }
 
-TODO: google analytics
+TODO: Fixa för alla skärmstorlekar.
+
+TODO: Fixa vad som ska visas i kolumnerna. Mest lästa?
+
+TODO: Fixa så molnen centreras etc
 
 TODO: Man kan inte klicka på hela headern, biten till vänster hamnar under titelns div...
 
-TODO: Ändra hårdkodning av "tips" till "dagens tips"
+TODO: Kolla upp alla TODOs
 
-TODO: Visa allt på förstasidan.
 
-TODO: Fixa för alla skärmstorlekar.
+TODO: google analytics
 
-TODO: Fixa cloud även när man är i artikeln.
+TODO: Städa
 
-TODO: 404-sida.
-
-TOOO: färgerna på vänster- och högerkolumn
-
-TODO: Hur ska author-bilden skäras av när man är inne på artiklar?
+MÅSTE INTE GÖRAS:
 
 TODO: Ska datumen vara klickbara?
 
-TODO:
+TODO: Hur ska author-bilden skäras av när man är inne på artiklar?

@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<div class="container">
+<div class="container cloud-container">
 
     <div class="col-md-6">
         <div class="cloud-yellow">
