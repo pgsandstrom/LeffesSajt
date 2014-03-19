@@ -8,25 +8,25 @@
  */
 
 get_header(); ?>
-<div class="container cloud-container">
+<div class="container">
 
-    <div class="col-md-6">
-        <div class="cloud-yellow">
-            <div class="cloud-title cloud-title-yellow">
+    <div class="container-cloud-left col-md-6">
+        <div class="cloud-left">
+            <div class="cloud-title cloud-title-left">
                 Rubriker
             </div>
-            <ul class="cloud-body cloud-body-yellow">
+            <ul class="cloud-body cloud-body-left">
                 <?php latest_published_articles(); ?>
             </ul>
         </div>
     </div>
 
-    <div class="col-md-6">
-        <div class="cloud-green">
-            <div class="cloud-title cloud-title-green">
+    <div class="container-cloud-right col-md-6">
+        <div class="cloud-right">
+            <div class="cloud-title cloud-title-right">
                 Ämnen
             </div>
-            <ul class="cloud-body cloud-body-green">
+            <ul class="cloud-body cloud-body-right">
                 <?php most_common_tags_in_last_days(); ?>
             </ul>
         </div>

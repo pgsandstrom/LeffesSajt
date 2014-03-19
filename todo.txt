@@ -10,6 +10,14 @@ if (!current_user_can('publish_posts') &&
 
 }
 
+TODO: Fixa en "kontakt"-mail
+
+TODO: Gör taggar klickbara igen
+
+TODO: Lägg in den korrekta bilden på leffe å martin
+
+TODO: Testa akismet
+
 TODO: "ladda mer"-knappar
 
 TODO: Fixa för alla skärmstorlekar.

@@ -12,22 +12,25 @@ if (!isset($content_width)) {
     $content_width = 640; /* pixels */
 }
 
-function print_categories() {
+function print_categories()
+{
     $categories = get_the_category();
     $separator = ' ';
     $output = '';
     foreach ($categories as $category) {
-        $output .= '<a href="' . get_category_link($category->term_id) . '">' . $category->cat_name . '</a>' . $separator;
+        $output .= '<a href="' . get_category_link($category->term_id) . '">' . strtoupper($category->cat_name) . '</a>' . $separator;
     }
-    $output = strtoupper($output);
     echo trim($output, $separator);
 }
 
-function print_tags() {
+function print_tags()
+{
     $posttags = get_the_tags();
     if ($posttags) {
-        foreach($posttags as $tag) {
-            echo '<span class="tag-item">' . strtoupper($tag->name) . '</span>';
+        foreach ($posttags as $tag) {
+//            echo '<a href="' . esc_url($category_link) . '">' . $category->cat_name . '</a>';
+            echo '<span class="tag-item"><a href="' . get_tag_link($tag->term_id) . '" >' . strtoupper($tag->name) . '</a></span>';
+//            echo '<span class="tag-item">' . strtoupper($tag->name) . '</span>';
         }
     }
 }
@@ -65,27 +68,28 @@ function most_common_tags_in_last_days()
     }
 }
 
-function most_commented_articles() {
+function most_commented_articles()
+{
 
-            $popular = new WP_Query( array(
-                'post_type'             => array( 'post' ),
-                'showposts'             => 5,
-                'cat'                   => 'MyCategory',
-                'ignore_sticky_posts'   => true,
-                'orderby'               => 'comment_count',
-                'order'                 => 'dsc',
+    $popular = new WP_Query(array(
+        'post_type' => array('post'),
+        'showposts' => 5,
+        'cat' => 'MyCategory',
+        'ignore_sticky_posts' => true,
+        'orderby' => 'comment_count',
+        'order' => 'dsc',
 //                'date_query' => array(
 //                    array(
 //                        'after' => '1 week ago',
 //                    ),
 //                ),
-            ) );
-            while ( $popular->have_posts() ): $popular->the_post();
+    ));
+    while ($popular->have_posts()): $popular->the_post();
 
-                echo  '<li><a href="' . get_permalink( $popular->id ) . '">' .  get_the_title() . '</a></li>';
+        echo '<li><a href="' . get_permalink($popular->id) . '">' . get_the_title() . '</a></li>';
 
 
-             endwhile;
+    endwhile;
 }
 
 if (!function_exists('innovation1000_setup')) :

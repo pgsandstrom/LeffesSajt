@@ -306,7 +306,7 @@ msgid "_s"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://underscores.me/"
+msgid "http://persandstrom.se/"
 msgstr ""
 
 #. Description of the plugin/theme
