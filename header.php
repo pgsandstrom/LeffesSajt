@@ -42,7 +42,7 @@
                 <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
             </nav>
 
-            <div class="site-branding">
+                <div class="site-branding">
 
                 <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png"/>

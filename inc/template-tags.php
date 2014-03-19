@@ -72,7 +72,8 @@ if ( ! function_exists( 'innovation1000_posted_on' ) ) :
 function innovation1000_posted_on() {
 	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
+        //we dont want an update tag
+//		$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
 	}
 
 	$time_string = sprintf( $time_string,
@@ -81,6 +82,8 @@ function innovation1000_posted_on() {
 		esc_attr( get_the_modified_date( 'c' ) ),
 		esc_html( get_the_modified_date() )
 	);
+
+    $time_string = strtoupper($time_string);
 
 	printf( __( '<span class="posted-on">%1$s</span>', 'innovation1000' ),
 		sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',

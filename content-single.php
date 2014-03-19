@@ -7,25 +7,22 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
-        <h1 class="entry-title"><?php the_title(); ?></h1>
-
         <div class="entry-meta">
             <span class="category-item">
                 <?php
-                the_category(', ')
+                print_categories();
                 ?>
             </span>
 
             <?php innovation1000_posted_on(); ?>
 
             <?php
-            $tags_list = get_the_tag_list('<span class="tag-item">', '</span><span class="tag-item">', '</span>');
-            if ($tags_list) :
-                printf(__('%1$s', 'innovation1000'), $tags_list);
-            endif;
+            print_tags();
             ?>
         </div>
         <!-- .entry-meta -->
+
+        <h1 class="entry-title"><?php the_title(); ?></h1>
     </header>
     <!-- .entry-header -->
 

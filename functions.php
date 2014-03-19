@@ -12,6 +12,26 @@ if (!isset($content_width)) {
     $content_width = 640; /* pixels */
 }
 
+function print_categories() {
+    $categories = get_the_category();
+    $separator = ' ';
+    $output = '';
+    foreach ($categories as $category) {
+        $output .= '<a href="' . get_category_link($category->term_id) . '">' . $category->cat_name . '</a>' . $separator;
+    }
+    $output = strtoupper($output);
+    echo trim($output, $separator);
+}
+
+function print_tags() {
+    $posttags = get_the_tags();
+    if ($posttags) {
+        foreach($posttags as $tag) {
+            echo '<span class="tag-item">' . strtoupper($tag->name) . '</span>';
+        }
+    }
+}
+
 function latest_published_articles()
 {
     $args = array('numberposts' => '5', 'category' => get_cat_ID('artiklar'));
