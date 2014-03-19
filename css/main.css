@@ -28,6 +28,14 @@
     src: url('../fonts/Gotham-Light.otf');
 }
 
+.container-cloud-yellow {
+    padding-right: 2px;
+}
+
+.container-cloud-green {
+    padding-left: 2px;
+}
+
 .cloud-yellow {
     background-color: #ffdf42;
     -webkit-border-radius: 4px;
@@ -167,6 +175,15 @@
     font-family: 'Gotham-Bold';
 }
 
+/*adjust so sidebars are thinner:*/
+.sidebar {
+    width: 19.5%;
+}
+
+.site-main {
+    width: 61%;
+}
+
 #sidebar-left {
     padding-right: 0px;
 }
@@ -176,11 +193,11 @@
 }
 
 #sidebar-right {
-    padding-left: 0px;
+    padding-left: 30px;
 }
 
 #sidebar-right .widget {
-    background:rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 }
 
 .widget {

@@ -13,7 +13,7 @@ get_header(); ?>
     <div class="col-md-6">
         <div class="cloud-yellow">
             <div class="cloud-title cloud-title-yellow">
-                TÄNK SÅ HÄR
+                Rubriker
             </div>
             <ul class="cloud-body cloud-body-yellow">
                 <?php latest_published_articles(); ?>
@@ -24,7 +24,7 @@ get_header(); ?>
     <div class="col-md-6">
         <div class="cloud-green">
             <div class="cloud-title cloud-title-green">
-                TÄNK SÅ HÄR
+                Ämnen
             </div>
             <ul class="cloud-body cloud-body-green">
                 <?php most_common_tags_in_last_days(); ?>

@@ -5,7 +5,7 @@
  * @package innovation1000
  */
 ?>
-<div id="sidebar-left" class="widget-area sidebar-left col-md-3 col-sm-4 hidden-xs" role="complementary">
+<div id="sidebar-left" class="widget-area sidebar sidebar-left col-md-3 col-sm-4 hidden-xs" role="complementary">
 
 <!--    <aside id="recent" class="widget">-->
 <!--        <h2 class="sidebar-title">MEST LÄSTA</h2>-->
