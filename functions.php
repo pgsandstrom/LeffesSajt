@@ -40,7 +40,7 @@ function latest_published_articles()
     $args = array('numberposts' => '5', 'category' => get_cat_ID('artiklar'));
     $recent_posts = wp_get_recent_posts($args);
     foreach ($recent_posts as $recent) {
-        echo '<li><a href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a> </li> ';
+        echo '<li><a href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a></li>';
     }
 }
 
@@ -59,7 +59,7 @@ function most_common_tags_in_last_days()
         $tags = get_tags(array(
             'orderby' => 'count',
             'order' => 'DESC',
-            'number' => 28,
+            'number' => 48,
             'include' => $term_ids,
         ));
         foreach ((array)$tags as $tag) {
