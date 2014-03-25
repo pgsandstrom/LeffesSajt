@@ -18,7 +18,7 @@ function print_categories()
     $separator = ' ';
     $output = '';
     foreach ($categories as $category) {
-        $output .= '<a href="' . get_category_link($category->term_id) . '">' . strtoupper($category->cat_name) . '</a>' . $separator;
+        $output .= '<a href="' . get_category_link($category->term_id) . '">' . mb_strtoupper($category->cat_name) . '</a>' . $separator;
     }
     echo trim($output, $separator);
 }
@@ -29,8 +29,8 @@ function print_tags()
     if ($posttags) {
         foreach ($posttags as $tag) {
 //            echo '<a href="' . esc_url($category_link) . '">' . $category->cat_name . '</a>';
-            echo '<span class="tag-item"><a href="' . get_tag_link($tag->term_id) . '" >' . strtoupper($tag->name) . '</a></span>';
-//            echo '<span class="tag-item">' . strtoupper($tag->name) . '</span>';
+            echo '<span class="tag-item"><a href="' . get_tag_link($tag->term_id) . '" >' . mb_strtoupper($tag->name) . '</a></span>';
+//            echo '<span class="tag-item">' . mb_strtoupper($tag->name) . '</span>';
         }
     }
 }

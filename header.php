@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css" type="text/css"
           media="screen"/>
 
+    <link rel="shortcut icon"
+          href="<?php bloginfo('template_directory'); ?>/favicon.png"/>
+
+
     <?php wp_head(); ?>
 </head>
 

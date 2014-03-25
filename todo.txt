@@ -10,19 +10,7 @@ if (!current_user_can('publish_posts') &&
 
 }
 
-TODO: Annars brödtext
-
-TODO: Ser för jävligt ut när taggar hamnar på ny rad
-
-TODO: Hur ser det ut när tag-clouden blir överfulla?
-
-TODO: Öka avståndet mellan taggar och rubriken
-
-TODO: favicon
-
 TODO: Fixa en "kontakt"-mail
-
-TODO: Gör taggar klickbara igen
 
 TODO: Lägg in den korrekta bilden på leffe å martin
 
@@ -36,12 +24,9 @@ TODO: Fixa vad som ska visas i kolumnerna. Mest lästa?
 
 TODO: "share"-buttons
 
-TODO: Fixa så molnen centreras etc
-
 TODO: Man kan inte klicka på hela headern, biten till vänster hamnar under titelns div...
 
 TODO: Kolla upp alla TODOs
-
 
 TODO: google analytics
 
