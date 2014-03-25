@@ -39,7 +39,7 @@
             <img id="authors" src="<?php echo get_bloginfo('template_directory'); ?>/img/authors_wide.png"/>
 
             <nav id="site-navigation" class="" role="navigation">
-                <h1 class="menu-toggle"><?php _e('Menu', 'innovation1000'); ?></h1>
+                <h1 class="menu-toggle hide"><?php _e('Menu', 'innovation1000'); ?></h1>
                 <a class="skip-link screen-reader-text"
                    href="#content"><?php _e('Skip to content', 'innovation1000'); ?></a>
 

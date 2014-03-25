@@ -10,7 +10,7 @@ if (!current_user_can('publish_posts') &&
 
 }
 
-TODO: Fixa en "kontakt"-mail
+TODO: Kolla deras senaste mail
 
 TODO: Lägg in den korrekta bilden på leffe å martin
 

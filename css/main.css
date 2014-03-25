@@ -28,6 +28,20 @@
     src: url('../fonts/Gotham-Light.otf');
 }
 
+.hide {
+    display:none;
+}
+
+@media (max-width: 991px) {
+    .container-cloud-left {
+        display: none;
+    }
+
+    .container-cloud-right {
+        display: none;
+    }
+}
+
 .container-cloud-left {
     padding-right: 2px;
 }
@@ -118,6 +132,12 @@
     font-family: 'Gotham-Bold';
 }
 
+@media (max-width: 991px) {
+    .nav-menu {
+        margin-right: 30px;
+    }
+}
+
 .nav-menu li {
     display: inline-block;
     padding-left: 25px;
@@ -152,13 +172,43 @@
 
 }
 
-#authors {
-    position: absolute;
-    height: 200px;
-    /*TODO fulhack*/
-    margin-top: 0px;
-    margin-left: 822px;
+@media (min-width: 1200px) {
+    #authors {
+        position: absolute;
+        height: 200px;
+        /*TODO fulhack*/
+        margin-top: 0px;
+        margin-left: 822px;
 
+    }
+}
+
+@media (min-width: 992px) {
+    #authors {
+        position: absolute;
+        height: 200px;
+        /*TODO fulhack*/
+        margin-top: 0px;
+        margin-left: 622px;
+
+    }
+}
+
+@media (max-width: 991px) {
+    #authors {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    #authors {
+        position: absolute;
+        height: 200px;
+        /*TODO fulhack*/
+        margin-top: 0px;
+        margin-left: 822px;
+
+    }
 }
 
 .sidebar-body {
@@ -172,15 +222,30 @@
     font-family: 'Gotham-Bold';
 }
 
-/*adjust so sidebars are thinner:*/
-.sidebar {
-    width: 19.5%;
+@media (min-width: 992px) {
+    /*adjust so sidebars are thinner:*/
+    .sidebar {
+        width: 19.5%;
+    }
+
+    .site-main {
+        width: 61%;
+        padding-top: 12px;
+        padding-left: 27px;
+    }
 }
 
-.site-main {
-    width: 61%;
-    padding-top: 12px;
-    padding-left: 27px;
+@media (min-width: 768px) and (max-width: 991px) {
+    /*adjust so sidebars are thinner:*/
+    .sidebar {
+        width: 183px;
+    }
+
+    .site-main {
+        width: 537px;
+        padding-top: 12px;
+        padding-left: 27px;
+    }
 }
 
 #sidebar-left {
