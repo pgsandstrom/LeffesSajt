@@ -41,7 +41,8 @@ get_header(); ?>
         <?php if (have_posts()) : ?>
 
             <header class="page-header">
-                <h1 class="page-title">
+<!--                <h1 class="page-title">-->
+<!--                </h1>-->
                     <?php
                     if (is_category()) :
                         echo '<span class="category-item">';
@@ -73,7 +74,6 @@ get_header(); ?>
 
                     endif;
                     ?>
-                </h1>
                 <?php
                 // Show an optional term description.
                 $term_description = term_description();
