@@ -10,6 +10,16 @@ if (!current_user_can('publish_posts') &&
 
 }
 
+TODO: Annars brödtext
+
+TODO: Ser för jävligt ut när taggar hamnar på ny rad
+
+TODO: Hur ser det ut när tag-clouden blir överfulla?
+
+TODO: Öka avståndet mellan taggar och rubriken
+
+TODO: favicon
+
 TODO: Fixa en "kontakt"-mail
 
 TODO: Gör taggar klickbara igen

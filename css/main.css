@@ -79,7 +79,7 @@
     font-size: 0.7em;
     margin-bottom: 15px;
     text-align: center;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .cloud-body li {
@@ -232,15 +232,17 @@ footer.entry-meta {
 }
 
 .category-item {
-    /*letter-spacing: 0.0625em;*/
+    display: inline-block;
     font-family: 'Gotham-Bold';
     font-size: 0.7em;
     background-color: #ef9909;
     color: white !important;
-    padding: 8px 5px 8px 8px;
+    padding: 6px 8px 0px 8px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+    margin-right: 2px;
+    height: 28px;
 }
 
 .category-item a {
@@ -248,15 +250,16 @@ footer.entry-meta {
 }
 
 .posted-on {
+    display: inline-block;
     font-family: 'Gotham-Bold';
     font-size: 0.7em;
     background-color: #2ac6c7;
-    padding: 8px 5px 8px 8px;
+    padding: 6px 8px 0px 8px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    margin-left: 7px;
     margin-right: 2px;
+    height: 28px;
 }
 
 .posted-on a {
@@ -269,11 +272,13 @@ footer.entry-meta {
     font-size: 0.7em;
     background-color: #ef9909;
     color: white !important;
-    padding: 8px 5px 8px 8px;
+    padding: 6px 8px 0px 8px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
     margin-right: 5px;
+    height: 28px;
+    margin-bottom: 7px;
 }
 
 .tag-item a {
