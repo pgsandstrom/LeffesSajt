@@ -27,7 +27,7 @@ get_header(); ?>
                 Ämnen
             </div>
             <ul class="cloud-body cloud-body-right">
-                <?php most_common_tags_in_last_days(); ?>
+                <?php most_common_tags(); ?>
             </ul>
         </div>
     </div>

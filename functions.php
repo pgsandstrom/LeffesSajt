@@ -44,22 +44,23 @@ function latest_published_articles()
     }
 }
 
-function most_common_tags_in_last_days()
+function most_common_tags()
 {
-    //            Vanligaste taggarna senaste 30 dagarna. Se:
-    //             http://wordpress.stackexchange.com/questions/48557/display-list-of-most-used-tags-in-the-last-30-days
+    // Tog från:
+    // http://wordpress.stackexchange.com/questions/48557/display-list-of-most-used-tags-in-the-last-30-days
     global $wpdb;
     $term_ids = $wpdb->get_col("
     SELECT term_id FROM $wpdb->term_taxonomy
     INNER JOIN $wpdb->term_relationships ON $wpdb->term_taxonomy.term_taxonomy_id=$wpdb->term_relationships.term_taxonomy_id
     INNER JOIN $wpdb->posts ON $wpdb->posts.ID = $wpdb->term_relationships.object_id
-    WHERE DATE_SUB(CURDATE(), INTERVAL 30 DAY) <= $wpdb->posts.post_date");
+    ");
+//    WHERE DATE_SUB(CURDATE(), INTERVAL 30 DAY) <= $wpdb->posts.post_date");
 
     if (count($term_ids) > 0) {
         $tags = get_tags(array(
             'orderby' => 'count',
             'order' => 'DESC',
-            'number' => 48,
+            'number' => 42,
             'include' => $term_ids,
         ));
         foreach ((array)$tags as $tag) {

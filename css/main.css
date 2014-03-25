@@ -106,14 +106,15 @@
     float: right;
     width: 100%;
     background: black;
-    height: 90px;
+    height: 80px;
     font-size: 1em;
+    margin-right: 5px; /* to make sure it doesn't stick out at the right side of the "authors"-image */
 }
 
 .nav-menu {
     float: right;
     margin-top: 55px;
-    margin-right: 220px;
+    margin-right: 285px;
     font-family: 'Gotham-Bold';
 }
 
@@ -155,8 +156,8 @@
     position: absolute;
     height: 200px;
     /*TODO fulhack*/
-    margin-top: 10px;
-    margin-left: 860px;
+    margin-top: 0px;
+    margin-left: 822px;
 
 }
 
