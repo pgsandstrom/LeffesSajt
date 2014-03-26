@@ -16,7 +16,7 @@ get_header(); ?>
                 Rubriker
             </div>
             <ul class="cloud-body cloud-body-left">
-                <?php latest_published_articles(); ?>
+                <?php print_latest_published_articles(); ?>
             </ul>
         </div>
     </div>
@@ -27,7 +27,7 @@ get_header(); ?>
                 Ämnen
             </div>
             <ul class="cloud-body cloud-body-right">
-                <?php most_common_tags(); ?>
+                <?php print_most_common_tags(); ?>
             </ul>
         </div>
     </div>

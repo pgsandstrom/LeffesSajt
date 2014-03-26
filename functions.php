@@ -35,7 +35,7 @@ function print_tags()
     }
 }
 
-function latest_published_articles()
+function print_latest_published_articles()
 {
     $args = array('numberposts' => '5', 'category' => get_cat_ID('artiklar'));
     $recent_posts = wp_get_recent_posts($args);
@@ -44,7 +44,7 @@ function latest_published_articles()
     }
 }
 
-function most_common_tags()
+function print_most_common_tags()
 {
     // Tog från:
     // http://wordpress.stackexchange.com/questions/48557/display-list-of-most-used-tags-in-the-last-30-days
@@ -69,13 +69,13 @@ function most_common_tags()
     }
 }
 
-function most_commented_articles()
+function print_most_commented_articles()
 {
 
     $popular = new WP_Query(array(
         'post_type' => array('post'),
         'showposts' => 5,
-        'cat' => 'MyCategory',
+//        'category_name' => 'whaeva',
         'ignore_sticky_posts' => true,
         'orderby' => 'comment_count',
         'order' => 'dsc',
@@ -88,6 +88,23 @@ function most_commented_articles()
     while ($popular->have_posts()): $popular->the_post();
 
         echo '<li><a href="' . get_permalink($popular->id) . '">' . get_the_title() . '</a></li>';
+
+
+    endwhile;
+}
+
+function print_ordlista()
+{
+
+    $ordlista = new WP_Query(array(
+        'post_type' => array('post'),
+        'showposts' => 5,
+        'tag' => 'ordlista',
+        'ignore_sticky_posts' => true,
+    ));
+    while ($ordlista->have_posts()): $ordlista->the_post();
+
+        echo '<li><a href="' . get_permalink($ordlista->id) . '">' . get_the_title() . '</a></li>';
 
 
     endwhile;

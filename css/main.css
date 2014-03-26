@@ -29,7 +29,7 @@
 }
 
 .hide {
-    display:none;
+    display: none;
 }
 
 @media (max-width: 991px) {
@@ -211,10 +211,29 @@
     }
 }
 
+.wpp-list {
+    font-size: 0.8em;
+    padding-top: 5px;
+    margin-left: 15px;
+}
+
+/* To hide the stupid comment-row from the "popular post"-plugin */
+.wpp-comments {
+    display: none;
+}
+
+/* Override the stupid "popular post"-plugins css */
+.wpp-list li {
+    display: list-item !important;
+    overflow:visible !important;
+}
+
 .sidebar-body {
     font-size: 0.8em;
     padding-top: 5px;
     margin-left: 15px;
+
+
 }
 
 .sidebar-title {
