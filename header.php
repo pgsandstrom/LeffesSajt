@@ -39,6 +39,7 @@
             <img id="authors" src="<?php echo get_bloginfo('template_directory'); ?>/img/authors_wide.png"/>
 
             <nav id="site-navigation" class="" role="navigation">
+                <?php //denna h1:an är ett mysteri, headern slutar funka utan den... ?>
                 <h1 class="menu-toggle hide"><?php _e('Menu', 'innovation1000'); ?></h1>
                 <a class="skip-link screen-reader-text"
                    href="#content"><?php _e('Skip to content', 'innovation1000'); ?></a>
@@ -46,10 +47,10 @@
                 <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
             </nav>
 
-                <div class="site-branding">
+            <div class="site-branding">
 
                 <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                    <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png"/>
+                    <img id="logo" src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png"/>
                 </a>
 
                 <div class="site-title">

@@ -150,8 +150,12 @@
 .site-branding {
     float: left;
     position: absolute;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-left: 20px;
+}
+
+#logo {
+    margin-top: -40px;
 }
 
 .site-branding a {
@@ -164,12 +168,11 @@
     /*font-weight: 800;*/
     font-family: 'Gotham-Bold';
     padding-left: 10px;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .site-title div {
     line-height: 36px;
-
 }
 
 @media (min-width: 1200px) {
@@ -211,6 +214,27 @@
     }
 }
 
+/*En lösning för hur headern ska bete sig när skärmen blir riktigt liten: */
+@media (max-width: 510px) {
+    .site-branding>a {
+        width: 111px;
+    }
+
+    #logo {
+        height: 111px;
+        width: 111px;
+    }
+
+    .site-branding {
+        margin-left: 10px;
+    }
+
+    .site-title div {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
 .wpp-list {
     font-size: 0.8em;
     padding-top: 5px;
@@ -225,14 +249,13 @@
 /* Override the stupid "popular post"-plugins css */
 .wpp-list li {
     display: list-item !important;
-    overflow:visible !important;
+    overflow: visible !important;
 }
 
 .sidebar-body {
     font-size: 0.8em;
     padding-top: 5px;
     margin-left: 15px;
-
 
 }
 
