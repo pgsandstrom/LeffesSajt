@@ -424,3 +424,13 @@ footer.entry-meta {
     width: 50px !important:
     float:left;
 }
+
+
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}

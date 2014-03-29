@@ -14,6 +14,8 @@ Plugins:
 ---------------
 https://github.com/pgsandstrom/wordpress_json_api (originalet ligger på http://wordpress.org/plugins/json-api/)
 http://wordpress.org/plugins/wp-postviews/
+http://wordpress.org/plugins/wordpress-popular-posts/
+http://wordpress.org/plugins/really-simple-facebook-twitter-share-buttons/installation/
 
 Troubleshooting
 ===

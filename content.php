@@ -43,7 +43,7 @@
             ?>
         </div><!-- .entry-content -->
     <?php endif; ?>
-
+    <div class="clearfix"></div>    <!-- En clearfix behövs då t.ex. ett share-plugin buggar sidan annars -->
     <footer class="entry-meta">
 
         <?php if (!post_password_required() && (comments_open() || '0' != get_comments_number())) : ?>
