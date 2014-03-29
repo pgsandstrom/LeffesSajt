@@ -304,7 +304,8 @@
 }
 
 #sidebar-right .widget {
-    background: rgba(0, 0, 0, 0);
+    /*background: rgba(0, 0, 0, 0);*/
+    background-color: #bfbfbf;
 }
 
 .widget {
@@ -398,4 +399,9 @@ footer.entry-meta {
 
 .tag-item a {
     color: white !important;
+}
+
+#vinnova {
+    width: 50px !important:
+    float:left;
 }

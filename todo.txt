@@ -20,8 +20,6 @@ TODO: "ladda mer"-knappar
 
 TODO: Fixa för alla skärmstorlekar.
 
-TODO: Fixa vad som ska visas i kolumnerna. Mest lästa?
-
 TODO: "share"-buttons
 
 TODO: Man kan inte klicka på hela headern, biten till vänster hamnar under titelns div...

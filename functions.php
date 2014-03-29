@@ -37,7 +37,7 @@ function print_tags()
 
 function print_latest_published_articles()
 {
-    $args = array('numberposts' => '5', 'category' => get_cat_ID('artiklar'));
+    $args = array('numberposts' => '10', 'category' => get_cat_ID('artiklar'));
     $recent_posts = wp_get_recent_posts($args);
     foreach ($recent_posts as $recent) {
         echo '<li><a href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a></li>';
@@ -95,7 +95,6 @@ function print_most_commented_articles()
 
 function print_ordlista()
 {
-
     $ordlista = new WP_Query(array(
         'post_type' => array('post'),
         'showposts' => 5,
@@ -103,10 +102,20 @@ function print_ordlista()
         'ignore_sticky_posts' => true,
     ));
     while ($ordlista->have_posts()): $ordlista->the_post();
-
         echo '<li><a href="' . get_permalink($ordlista->id) . '">' . get_the_title() . '</a></li>';
+    endwhile;
+}
 
-
+function print_latest_tips()
+{
+    $tips = new WP_Query(array(
+        'post_type' => array('post'),
+        'showposts' => 1,
+        'category_name' => 'dagens tips',
+        'ignore_sticky_posts' => true,
+    ));
+    while ($tips->have_posts()): $tips->the_post();
+        echo '<a href="' . get_permalink($tips->id) . '">' . 'DAGENS TIPS ' . mb_strtoupper(get_the_time('j F', $tips->ID)) . '</a>';
     endwhile;
 }
 
