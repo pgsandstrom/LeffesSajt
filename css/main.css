@@ -141,6 +141,7 @@
 .nav-menu li {
     display: inline-block;
     padding-left: 25px;
+    float:right;
 }
 
 .nav-menu li a {
@@ -221,17 +222,35 @@
     }
 
     #logo {
-        height: 111px;
-        width: 111px;
+        height: 94px;
+        width: 94px;
     }
 
     .site-branding {
         margin-left: 10px;
     }
 
+    .site-title {
+        margin-top: 3px;
+        padding-left: 0px;
+    }
+
     .site-title div {
         font-size: 24px;
         line-height: 24px;
+    }
+
+    .nav-menu {
+        margin-top: 10px;
+    }
+
+    .nav-menu li {
+        display: block;
+        float:none;
+    }
+
+    .site-header {
+        margin-bottom: 55px;
     }
 }
 
