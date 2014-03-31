@@ -12,4 +12,11 @@
         print_latest_tips();
         ?>
     </aside>
+
+    <aside  class="">
+        Snart som app i din mobil!
+<!--        <a href="http://vinnova.se" target="_blank">-->
+            <img id="vinnova" src="<?php echo get_bloginfo('template_directory'); ?>/img/appunderconstruction.png"/>
+<!--        </a>-->
+    </aside>
 </div><!-- #sidebar-right -->

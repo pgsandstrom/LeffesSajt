@@ -1,26 +1,29 @@
-TODO: räkna antalet views
-för att upptäcka bottar:
 
-$bots = array('wordpress', 'googlebot', 'google', 'msnbot', 'ia_archiver', 'lycos', 'jeeves', 'scooter', 'fast-webcrawler', 'slurp@inktomi', 'turnitinbot', 'technorati',
-    'yahoo', 'findexa', 'findlinks', 'gaisbo', 'zyborg', 'surveybot', 'bloglines', 'blogsearch', 'pubsub', 'syndic8', 'userland', 'gigabot', 'become.com');
-if (!current_user_can('publish_posts') &&
-    !empty($_SERVER['HTTP_USER_AGENT']) &&
-    !preg_match('/' . implode('|', $bots) . '/i', $_SERVER['HTTP_USER_AGENT'])
-) {
+ordlista ska bli till två artiklar:
 
-}
+http://tusentips.wpengine.com/forsta-fackspraket/
+http://tusentips.wpengine.com/vad-ar-skillnaden-mellan/
 
-TODO: Kolla deras senaste mail
+fortsätt fundera på fonter
+"dagens tips" i headern
 
-TODO: Lägg in den korrekta bilden på leffe å martin
+fixa klar "header"-skiten
+
+mailto utan att fylla i mottagare, går det?
+
+"welcome"-popup som extra-artikel??
+
+smaska in sök igen!! ovanför mest lästa
+
+kommentera direkt i post-plugin.
+
+Låt molnen vara kvar i ipad-storlek (dvs när högerkolumnen försvinner)
+
+-----------------------
 
 TODO: Testa akismet
 
-TODO: "ladda mer"-knappar
-
 TODO: Fixa för alla skärmstorlekar.
-
-TODO: "share"-buttons
 
 TODO: Man kan inte klicka på hela headern, biten till vänster hamnar under titelns div...
 
@@ -32,6 +35,4 @@ TODO: Städa
 
 MÅSTE INTE GÖRAS:
 
-TODO: Ska datumen vara klickbara?
-
-TODO: Hur ska author-bilden skäras av när man är inne på artiklar?
+TODO: Ska datumen vara klickbara? NEJ!

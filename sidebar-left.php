@@ -11,7 +11,7 @@
         <h2 class="sidebar-title">MEST LÄSTA</h2>
         <?php
         if (function_exists('wpp_get_mostpopular')) {
-            wpp_get_mostpopular();
+            wpp_get_mostpopular("limit=5&post_type=post");
         }
         ?>
     </aside>
@@ -31,9 +31,7 @@
         <h2 class="sidebar-title">ORDLISTOR</h2>
 
         <ul class="sidebar-body">
-            <?php
-            print_ordlista();
-            ?>
+
         </ul>
     </aside>
 

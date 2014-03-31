@@ -18,7 +18,7 @@ get_header(); ?>
     <div class="container-cloud-left col-md-6">
         <div class="cloud-left">
             <div class="cloud-title cloud-title-left">
-                Rubriker
+                Välj bland rubriker
             </div>
             <ul class="cloud-body cloud-body-left">
                 <?php print_latest_published_articles(); ?>
@@ -29,7 +29,7 @@ get_header(); ?>
     <div class="container-cloud-right col-md-6">
         <div class="cloud-right">
             <div class="cloud-title cloud-title-right">
-                Ämnen
+                Välj bland ämnen
             </div>
             <ul class="cloud-body cloud-body-right">
                 <?php print_most_common_tags(); ?>
