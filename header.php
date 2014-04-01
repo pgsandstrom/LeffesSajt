@@ -52,7 +52,7 @@
             <div class="site-branding">
 
                 <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                    <img id="logo" src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png"/>
+                    <img class="main-logo" src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png"/>
                 </a>
 
                 <div class="site-title">

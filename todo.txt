@@ -7,7 +7,7 @@ fortsätt fundera på fonter
 
     "dagens tips" i headern
 
-fixa klar "header"-skiten
+    fixa klar "header"-skiten
 
 mailto utan att fylla i mottagare, går det?
 
@@ -17,7 +17,7 @@ mailto utan att fylla i mottagare, går det?
 
 kommentera direkt i post-plugin.
 
-Låt molnen vara kvar i ipad-storlek (dvs när högerkolumnen försvinner)
+    Låt molnen vara kvar i ipad-storlek (dvs när högerkolumnen försvinner)
 
 -----------------------
 

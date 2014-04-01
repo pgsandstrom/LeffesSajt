@@ -115,23 +115,40 @@
     margin-right: 5px; /* to make sure it doesn't stick out at the right side of the "authors"-image */
 }
 
+#header-menu {
+    height: 100%;
+}
+
+#header-menu>div {
+    position: relative;
+    height: 100%;
+}
+
 #header-menu>div>ul {
+
+    padding-left: 158px !important; /* so it never is placed behind the logo */
+    position: absolute;
+    bottom: 0;
+    right: 0;
     float: right;
-    margin-top: 53px;
+    margin-left: 0px;
     margin-right: 300px;
+    margin-bottom: 0px;
     font-family: 'Gotham-Bold';
 }
 
 @media (max-width: 991px) {
+    /* Move the nav-menu closer to the right when the authors disappear: */
     #header-menu>div>ul {
         margin-right: 30px;
     }
 }
 
 #header-menu>div>ul>li {
+
     display: inline-block;
     padding-left: 25px;
-    float:right;
+    float: right;
 }
 
 #header-menu>div>ul>li>a {
@@ -145,7 +162,10 @@
     margin-left: 20px;
 }
 
-#logo {
+.main-logo {
+    float: left;
+    width: 148px;
+    height: 148px;
     margin-top: -40px;
 }
 
@@ -211,7 +231,7 @@
         width: 111px;
     }
 
-    #logo {
+    .main-logo {
         height: 94px;
         width: 94px;
     }
@@ -225,18 +245,19 @@
         padding-left: 0px;
     }
 
-    .site-title>div {
+    .site-title>a>div {
         font-size: 24px;
         line-height: 24px;
     }
 
     #header-menu>div>ul {
         margin-top: 10px;
+        padding-left: 94px !important;
     }
 
     #header-menu>div>ul>li {
         display: block;
-        float:none;
+        float: none;
     }
 
     .site-header {
@@ -413,8 +434,7 @@ footer.entry-meta {
 }
 
 #vinnova {
-    width: 50px !important:
-    float:left;
+    width: 50px !important : float : left;
 }
 
 .search-field {
@@ -424,9 +444,10 @@ footer.entry-meta {
 
 .clearfix:before,
 .clearfix:after {
-    content:"";
-    display:table;
+    content: "";
+    display: table;
 }
+
 .clearfix:after {
-    clear:both;
+    clear: both;
 }
