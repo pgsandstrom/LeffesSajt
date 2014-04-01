@@ -106,7 +106,7 @@ function print_ordlista()
     endwhile;
 }
 
-function print_latest_tips()
+function get_latest_tips()
 {
     $tips = new WP_Query(array(
         'post_type' => array('post'),
@@ -114,9 +114,17 @@ function print_latest_tips()
         'category_name' => 'dagens tips',
         'ignore_sticky_posts' => true,
     ));
-    while ($tips->have_posts()): $tips->the_post();
-        echo '<a href="' . get_permalink($tips->id) . '">' . 'DAGENS TIPS ' . mb_strtoupper(get_the_time('j F', $tips->ID)) . '</a>';
-    endwhile;
+//    while ($tips->have_posts()): $tips->the_post();
+//        echo '<a href="' . get_permalink($tips->id) . '">' . 'DAGENS TIPS ' . mb_strtoupper(get_the_time('j F', $tips->ID)) . '</a>';
+//    endwhile;
+
+    if ($tips->have_posts()) {
+        $tips->the_post();
+        return '<a href="' . get_permalink($tips->id) . '">' . 'DAGENS TIPS ' . mb_strtoupper(get_the_time('j F', $tips->ID)) . '</a>';
+    } else {
+        return '<a href="/">INGA TIPS ÄNNU</a>';
+    }
+
 }
 
 if (!function_exists('innovation1000_setup')) :
@@ -152,6 +160,17 @@ if (!function_exists('innovation1000_setup')) :
         register_nav_menus(array(
             'primary' => __('Primary Menu', 'innovation1000'),
         ));
+
+        //Add the "dagens tips" to the primary menu:
+        add_filter('wp_nav_menu_items', 'your_custom_menu_item', 10, 2);
+        function your_custom_menu_item($items, $args)
+        {
+            if ($args->theme_location == 'primary') {
+                $items .= '<li class="menu-item">' . get_latest_tips() . '</li>';
+            }
+            return $items;
+        }
+
 
         // Enable support for Post Formats.
         add_theme_support('post-formats', array('aside', 'image', 'video', 'quote', 'link'));
