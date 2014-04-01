@@ -32,16 +32,6 @@
     display: none;
 }
 
-@media (max-width: 991px) {
-    .container-cloud-left {
-        display: none;
-    }
-
-    .container-cloud-right {
-        display: none;
-    }
-}
-
 .container-cloud-left {
     padding-right: 2px;
 }
@@ -250,7 +240,7 @@
     }
 
     .site-header {
-        margin-bottom: 55px;
+        margin-bottom: 70px;
     }
 }
 
