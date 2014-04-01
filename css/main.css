@@ -96,7 +96,7 @@
     overflow: hidden;
 }
 
-.cloud-body li {
+.cloud-body>li {
     background-color: white;
     display: inline-block;
     padding: 4px;
@@ -125,7 +125,7 @@
     margin-right: 5px; /* to make sure it doesn't stick out at the right side of the "authors"-image */
 }
 
-.nav-menu {
+#header-menu>div>ul {
     float: right;
     margin-top: 53px;
     margin-right: 300px;
@@ -133,18 +133,18 @@
 }
 
 @media (max-width: 991px) {
-    .nav-menu {
+    #header-menu>div>ul {
         margin-right: 30px;
     }
 }
 
-.nav-menu li {
+#header-menu>div>ul>li {
     display: inline-block;
     padding-left: 25px;
     float:right;
 }
 
-.nav-menu li a {
+#header-menu>div>ul>li>a {
     color: white !important;
 }
 
@@ -159,7 +159,7 @@
     margin-top: -40px;
 }
 
-.site-branding a {
+.site-branding>a {
     float: left;
 }
 
@@ -235,16 +235,16 @@
         padding-left: 0px;
     }
 
-    .site-title div {
+    .site-title>div {
         font-size: 24px;
         line-height: 24px;
     }
 
-    .nav-menu {
+    #header-menu>div>ul {
         margin-top: 10px;
     }
 
-    .nav-menu li {
+    #header-menu>div>ul>li {
         display: block;
         float:none;
     }
@@ -266,7 +266,7 @@
 }
 
 /* Override the stupid "popular post"-plugins css */
-.wpp-list li {
+.wpp-list>li {
     display: list-item !important;
     overflow: visible !important;
 }
@@ -314,7 +314,7 @@
     padding-right: 0px;
 }
 
-#sidebar-left .widget {
+#sidebar-left>.widget {
     background-color: #bfbfbf;
 }
 
@@ -322,7 +322,7 @@
     padding-left: 30px;
 }
 
-#sidebar-right .widget {
+#sidebar-right>.widget {
     /*background: rgba(0, 0, 0, 0);*/
     background-color: #bfbfbf;
 }
@@ -382,7 +382,7 @@ footer.entry-meta {
     height: 28px;
 }
 
-.category-item a {
+.category-item>a {
     color: white !important;
 }
 
@@ -399,7 +399,7 @@ footer.entry-meta {
     height: 28px;
 }
 
-.posted-on a {
+.posted-on>a {
     color: white !important;
 }
 
@@ -418,7 +418,7 @@ footer.entry-meta {
     margin-bottom: 7px;
 }
 
-.tag-item a {
+.tag-item>a {
     color: white !important;
 }
 

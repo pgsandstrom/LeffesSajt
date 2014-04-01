@@ -44,7 +44,9 @@
                 <a class="skip-link screen-reader-text"
                    href="#content"><?php _e('Skip to content', 'innovation1000'); ?></a>
 
-                <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+                <div id="header-menu">
+                    <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+                </div>
             </nav>
 
             <div class="site-branding">
