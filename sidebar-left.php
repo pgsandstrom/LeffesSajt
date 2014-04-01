@@ -7,6 +7,10 @@
 ?>
 <div id="sidebar-left" class="widget-area sidebar sidebar-left col-md-3 col-sm-4 hidden-xs" role="complementary">
 
+    <aside id="search" class="widget widget_search">
+        <?php get_search_form(); ?>
+    </aside>
+
     <aside id="recent" class="widget">
         <h2 class="sidebar-title">MEST LÄSTA</h2>
         <?php

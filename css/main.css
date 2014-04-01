@@ -427,6 +427,10 @@ footer.entry-meta {
     float:left;
 }
 
+.search-field {
+    margin: -5px 0px 5px -6px !important;
+    width: 99%;
+}
 
 .clearfix:before,
 .clearfix:after {
