@@ -31,7 +31,14 @@
         <h2 class="sidebar-title">ORDLISTOR</h2>
 
         <ul class="sidebar-body">
-
+            <?php
+//            Only print these hardcoded articles if they exist:
+            if (get_permalink(37)) : ?>
+            <li><a href="<?php echo get_permalink(37); ?>"><?php echo get_the_title(37); ?></a></li>
+            <?php endif ?>
+            <?php if (get_permalink(41)) : ?>
+            <li><a href="<?php echo get_permalink(41); ?>"><?php echo get_the_title(41); ?></a></li>
+            <?php endif ?>
         </ul>
     </aside>
 
