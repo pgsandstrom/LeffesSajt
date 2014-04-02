@@ -10,7 +10,7 @@
     <aside  class="">
         Snart som app i din mobil!
 <!--        <a href="http://vinnova.se" target="_blank">-->
-            <img id="vinnova" src="<?php echo get_bloginfo('template_directory'); ?>/img/appunderconstruction.png"/>
+            <img id="vinnova" src="<?php echo get_bloginfo('template_directory'); ?>/img/appunderconstruction-bw.png"/>
 <!--        </a>-->
     </aside>
 

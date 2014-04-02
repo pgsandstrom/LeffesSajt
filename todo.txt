@@ -1,23 +1,16 @@
+Fixa för äckliga wildfire
 
-    ordlista ska bli till två artiklar:
-    http://tusentips.wpengine.com/forsta-fackspraket/
-    http://tusentips.wpengine.com/vad-ar-skillnaden-mellan/
+Dropdown för mindre skärmar
 
-fortsätt fundera på fonter
+domänen måste sättas upp... få svar av svenska-domäner.
 
-    "dagens tips" i headern
+mailto utan att fylla i mottagare, går det? Lägg till "maila till"-knapp
 
-    fixa klar "header"-skiten
-
-mailto utan att fylla i mottagare, går det?
-
-"welcome"-popup som extra-artikel??
-
-    smaska in sök igen!! ovanför mest lästa
+* "welcome"-popup som extra-artikel??
 
 kommentera direkt i post-plugin.
 
-    Låt molnen vara kvar i ipad-storlek (dvs när högerkolumnen försvinner)
+Fixa så mobilen blir smalare när skärmen blir det.
 
 -----------------------
 

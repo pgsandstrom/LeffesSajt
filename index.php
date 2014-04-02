@@ -10,7 +10,6 @@
  *
  * @package innovation1000
  */
-
 get_header(); ?>
 
 <div class="container">
@@ -43,6 +42,13 @@ get_header(); ?>
     <?php get_sidebar('left'); ?>
 
     <main id="main" class="site-main col-md-6 col-sm-8 col-xs-12" role="main">
+
+
+        <?php
+        if (!$alreadyVisited) {
+            echo 'TODO: Ny besökare';
+        }
+        ?>
 
         <?php
         //        $args = array(
