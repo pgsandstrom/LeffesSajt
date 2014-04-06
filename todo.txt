@@ -6,8 +6,6 @@ domänen måste sättas upp... få svar av svenska-domäner.
 
 mailto utan att fylla i mottagare, går det? Lägg till "maila till"-knapp
 
-* "welcome"-popup som extra-artikel??
-
 kommentera direkt i post-plugin.
 
 -----------------------

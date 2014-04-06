@@ -43,10 +43,43 @@ get_header(); ?>
 
     <main id="main" class="site-main col-md-6 col-sm-8 col-xs-12" role="main">
 
-
         <?php
+        // Skriv ut hälsningsmeddelandet om inte '$alreadyVisited' är true (det av görs i header.php av en kaka)
         if (!$alreadyVisited) {
-            echo 'TODO: Ny besökare';
+            echo
+            <<<HTML
+                <article class="post type-post status-publish format-standard hentry category-artiklar">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Välkommen till innovationssamhället</h1>
+                    </header>
+                    <div class="entry-content">
+                        <p>Det kan kännas tjatigt att säga, men vi lever i en värld av allt snabbare förändringar.
+                            Förändringstakten i näringslivet gör att de företag som inte hänger med när som helst kan bli
+                            utkonkurrerade. Några kallar denna nyordning för innovationssamhället. Varför? Jo, för att det enda som
+                            skapar långsiktig trygghet i dagens värld är förmågan att ständigt förändra sig och prestera nya
+                            innovationer.</p>
+
+                           <p>
+                            De goda nyheterna är nämligen att mycket av den anpassning som krävs kan ske gratis – genom att förändra
+                            sättet att leda, driva och styra företag.
+                            Den här hemsidan, Tusen tips om innovation, är till för dig som vill bli framgångsrik i detta nya samhälle
+                            men inte vet riktigt var du ska börja.
+                            Vi som driver Tusen tips är Leif Denti, forskare i innovationspsykologi och managementkonsult, samt Martin
+                            Kreuger, journalist och chefsutbildare. Vi bevakar området för att kunna ge dig nya råd och insikter varje
+                            dag – både här på sidan och i vår mobilapp – om hur du leder och organiserar din arbetsplats mot större
+                            innovationsförmåga.
+                            </p>
+
+                           <p>
+                            Vårt arbete möjliggörs av innovationsmyndigheten Vinnova och forskningsstiftelsen IMIT.
+                            Så välkommen, både till innovationssamhället och till hemsidan som guidar dig dit. Och välkommen också att
+                            bidra med all din egen kunskap och dina kommentarer.</p>
+
+                           <p> Leif Denti och Martin Kreuger,
+                            redaktörer</p>
+                    </div>
+                </article>
+HTML;
         }
         ?>
 
