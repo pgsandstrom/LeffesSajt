@@ -166,7 +166,7 @@ if (!function_exists('innovation1000_setup')) :
         function your_custom_menu_item($items, $args)
         {
             if ($args->theme_location == 'primary') {
-                $items .= '<li class="menu-item">' . get_latest_tips() . '</li>';
+                $items .= '<li class="hidden-xs menu-item">' . get_latest_tips() . '</li>';
             }
             return $items;
         }

@@ -10,8 +10,6 @@ mailto utan att fylla i mottagare, går det? Lägg till "maila till"-knapp
 
 kommentera direkt i post-plugin.
 
-Fixa så mobilen blir smalare när skärmen blir det.
-
 -----------------------
 
 TODO: Testa akismet

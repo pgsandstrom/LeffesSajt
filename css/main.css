@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300,800);
-
+/*@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300,800);*/
 /*@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300);*/
 
 /*@font-face {*/
@@ -434,7 +433,7 @@ footer.entry-meta {
 }
 
 #vinnova {
-    width: 50px !important : float : left;
+    width: 100% !important;
 }
 
 .search-field {
@@ -450,4 +449,22 @@ footer.entry-meta {
 
 .clearfix:after {
     clear: both;
+}
+
+/* Fixa css-bugg enligt http://stackoverflow.com/questions/21984543/google-chrome-bug-website-not-displaying-text */
+body {
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0.1s;
+}
+
+@-webkit-keyframes fontfix {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
 }
