@@ -1,8 +1,8 @@
+Det svarta går inte ända ut i kanten
+
+welcome-artikeln ska ha lite mindre avstånd uppe å nere... kanske-
+
 Dropdown för mindre skärmar
-
-Minska rubrikstorlek på mobilen.
-
-Bryt av rubriken på mobilen så långa ord inte sticker ut.
 
 testa shareaholic?
 
