@@ -25,18 +25,6 @@
     <link rel="shortcut icon"
           href="<?php bloginfo('template_directory'); ?>/favicon.png"/>
 
-    <?php
-    // Kolla om personen besöker sajten för första gången:
-    global $alreadyVisited;
-    if (!isset($_COOKIE['already-visited'])) {
-        setcookie('already-visited', 'true');
-        $_COOKIE['lg'] = 'ro';
-        $alreadyVisited = false;
-    } else {
-        $alreadyVisited = true;
-    }
-    ?>
-
     <?php wp_head(); ?>
 </head>
 

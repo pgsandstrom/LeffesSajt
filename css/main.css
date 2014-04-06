@@ -98,6 +98,7 @@
 .site-header {
     padding-bottom: 20px;
     margin-bottom: 100px;
+    min-width: 320px;
 }
 
 #header-container {
@@ -159,6 +160,7 @@
     position: absolute;
     margin-top: 80px;
     margin-left: 20px;
+    min-width: 320px;
 }
 
 .main-logo {
@@ -315,6 +317,10 @@
     font-family: 'Gotham-Bold';
 }
 
+.site-main {
+    min-width: 320px;
+}
+
 @media (min-width: 992px) {
     /*adjust so sidebars are thinner:*/
     .sidebar {
@@ -375,6 +381,19 @@
     font-family: 'Gotham-Light';
     font-size: 2.75em;
     padding-top: 6px;
+    /*word-wrap:break-word;*/
+}
+
+@media (max-width: 510px) {
+    .entry-title {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 380px) {
+    .entry-title {
+        font-size: 1.8em;
+    }
 }
 
 .entry-content {

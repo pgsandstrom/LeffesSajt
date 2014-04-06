@@ -47,7 +47,7 @@ get_header(); ?>
                 <div class="page-content">
                     <p>Felet kan bero på att du skrivit in fel adress i webbläsaren eller att sidan tagits bort.</p>
 
-                    <p>Om du tror att felet beror på ett misstag från vår sida, kontakta oss på TODO@TODO.com</p>
+                    <p>Om du tror att felet beror på ett misstag från vår sida, kontakta oss på leif.denti@gu.se</p>
 
                 </div>
                 <!-- .page-content -->

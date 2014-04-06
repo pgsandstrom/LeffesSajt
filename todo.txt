@@ -1,5 +1,13 @@
 Dropdown för mindre skärmar
 
+Minska rubrikstorlek på mobilen.
+
+Bryt av rubriken på mobilen så långa ord inte sticker ut.
+
+testa shareaholic?
+
+molnen ska ha random saker i sig å finnas en "mer"-knapp
+
 domänen måste sättas upp... få svar av svenska-domäner.
 
 mailto utan att fylla i mottagare, går det? Lägg till "maila till"-knapp
