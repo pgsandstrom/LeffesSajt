@@ -1,12 +1,8 @@
-Fixa för äckliga wildfire
-
 Dropdown för mindre skärmar
 
 domänen måste sättas upp... få svar av svenska-domäner.
 
 mailto utan att fylla i mottagare, går det? Lägg till "maila till"-knapp
-
-kommentera direkt i post-plugin.
 
 -----------------------
 

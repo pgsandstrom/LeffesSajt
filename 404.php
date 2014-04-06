@@ -9,7 +9,7 @@ get_header(); ?>
 
     <div class="container">
 
-        <div class="container-cloud-left col-md-6">
+        <div class="container-cloud-left col-md-6 col-sm-6 hidden-xs">
             <div class="cloud-left">
                 <div class="cloud-title cloud-title-left">
                     Välj bland rubriker
@@ -20,7 +20,7 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="container-cloud-right col-md-6">
+        <div class="container-cloud-right col-md-6 col-sm-6 hidden-xs">
             <div class="cloud-right">
                 <div class="cloud-title cloud-title-right">
                     Välj bland ämnen
