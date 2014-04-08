@@ -76,9 +76,9 @@
 
 .cloud-body {
     font-family: 'Gotham-Bold';
-    padding: 10px 8px 5px 8px;
+    padding: 5px 8px 5px 8px;
     margin-left: 0px;
-    height: 133px;
+    height: 128px;
     font-size: 0.7em;
     margin-bottom: 15px;
     text-align: center;
@@ -492,7 +492,8 @@ footer.entry-meta {
     clear: both;
 }
 
-/* Fixa css-bugg enligt http://stackoverflow.com/questions/21984543/google-chrome-bug-website-not-displaying-text */
+/* Fix for bug discussed here: http://stackoverflow.com/questions/21984543/google-chrome-bug-website-not-displaying-text */
+/* Doesn't work though, so I have a fix in main.js as well... */
 body {
     -webkit-animation-duration: 0.1s;
     -webkit-animation-name: fontfix;

@@ -1,14 +1,12 @@
-Det svarta går inte ända ut i kanten
+molnen ska ha random saker i sig å finnas en "mer"-knapp
 
-welcome-artikeln ska ha lite mindre avstånd uppe å nere... kanske-
+Gör namnen klickbara och med länk till ”om oss”-sidan.
+
+Det svarta går inte ända ut i kanten
 
 Dropdown för mindre skärmar
 
 testa shareaholic?
-
-molnen ska ha random saker i sig å finnas en "mer"-knapp
-
-domänen måste sättas upp... få svar av svenska-domäner.
 
 mailto utan att fylla i mottagare, går det? Lägg till "maila till"-knapp
 
