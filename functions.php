@@ -216,6 +216,7 @@ function innovation1000_scripts()
     wp_enqueue_script('innovation1000-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true);
 
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), '20140407', true);
+    wp_enqueue_script('twitter', get_template_directory_uri() . '/js/twitter.js', array(), '20140409', true);
 
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array(), '20120206', true);
     wp_enqueue_script('customizer', get_template_directory_uri() . '/js/customizer.js', array(), '20120206', true);

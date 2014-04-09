@@ -8,6 +8,7 @@
 <div id="sidebar-right" class="widget-area sidebar sidebar-right col-md-3 hidden-sm hidden-xs" role="complementary">
 
     <aside  class="">
+        <a href="https://twitter.com/tusentips" class="twitter-follow-button" data-show-count="false" data-lang="sv" data-size="large">Följ @tusentips</a>
         <div>Snart som app</div>
         <div>i din mobil!</div>
 <!--        <a href="http://vinnova.se" target="_blank">-->
