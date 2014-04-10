@@ -14,6 +14,7 @@ if (!isset($content_width)) {
 
 function print_categories()
 {
+    //TODO Fixa cache åt denna å print_tags? Kan nog bli segt om de har flera hundra posts/tags.
     $categories = get_the_category();
     $separator = ' ';
     $output = '';
@@ -35,12 +36,21 @@ function print_tags()
     }
 }
 
-function print_latest_published_articles()
+function print_all_posts()
 {
-    $args = array('numberposts' => '10', 'category' => get_cat_ID('artiklar'));
-    $recent_posts = wp_get_recent_posts($args);
-    foreach ($recent_posts as $recent) {
-        echo '<li><a href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a></li>';
+    $args = array(/*'numberposts' => '10',*/ /*'category' => get_cat_ID('artiklar')*/);
+    $all_posts = wp_get_recent_posts($args);
+    foreach ($all_posts as $item) {
+        echo '<li><a href="' . get_permalink($item["ID"]) . '">' . $item["post_title"] . '</a></li>';
+    }
+}
+
+function print_all_tags()
+{
+    $args = array(/*'numberposts' => '10',*/ /*'category' => get_cat_ID('artiklar')*/);
+    $all_tags = get_tags($args);
+    foreach ($all_tags as $item) {
+        echo '<li><a href="' . get_permalink($item["ID"]) . '">' . $item["post_title"] . '</a></li>';
     }
 }
 

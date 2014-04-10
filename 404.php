@@ -11,21 +11,24 @@ get_header(); ?>
 
         <div class="container-cloud-left col-md-6 col-sm-6 hidden-xs">
             <div class="cloud-left">
-                <div class="cloud-title cloud-title-left">
-                    Välj bland rubriker
+                <div class="cloud-titlebar cloud-title-left">
+                    <span class="cloud-title">Välj bland rubriker</span>
+                    <span class="load-more"><a href="javascript:void(0)" onclick="tusentips.shufflePosts();">LADDA FLER</a></span>
                 </div>
-                <ul class="cloud-body cloud-body-left">
-                    <?php print_latest_published_articles(); ?>
+                <ul id="postList" class="cloud-body cloud-body-left">
+                    <?php print_all_posts(); ?>
                 </ul>
+
             </div>
         </div>
 
         <div class="container-cloud-right col-md-6 col-sm-6 hidden-xs">
             <div class="cloud-right">
-                <div class="cloud-title cloud-title-right">
-                    Välj bland ämnen
+                <div class="cloud-titlebar cloud-title-right">
+                    <span class="cloud-title">Välj bland ämnen</span>
+                    <span class="load-more"><a href="javascript:void(0)" onclick="tusentips.shuffleTags();">LADDA FLER</a></span>
                 </div>
-                <ul class="cloud-body cloud-body-right">
+                <ul id="tagList" class="cloud-body cloud-body-right">
                     <?php print_most_common_tags(); ?>
                 </ul>
             </div>

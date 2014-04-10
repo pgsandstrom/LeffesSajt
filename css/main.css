@@ -53,17 +53,23 @@
     border-radius: 4px;
 }
 
+.cloud-titlebar {
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
 .cloud-title {
+    display: inline-block;
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
     color: white;
     text-align: center;
     font-size: 1.2em;
     /*font-weight: bold;*/
     font-family: 'Gotham-Bold';
-    padding-top: 3px;
-    padding-bottom: 3px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
 }
 
 .cloud-title-left {
@@ -93,6 +99,24 @@
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+}
+
+.load-more {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    font-family: 'Gotham-Bold';
+    font-size: 11px;
+    background-color: #e84144;
+    padding: 4px;
+    margin: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.load-more>a {
+    color: white !important;
 }
 
 .site-header {
@@ -480,6 +504,10 @@ footer.entry-meta {
 .search-field {
     margin: -5px 0px 5px -6px !important;
     width: 99%;
+}
+
+.twitter-follow {
+    margin-bottom: 15px;
 }
 
 .clearfix:before,
