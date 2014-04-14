@@ -102,17 +102,20 @@
 }
 
 .load-more {
-    position: absolute;
-    top: 2px;
-    right: 4px;
     font-family: 'Gotham-Bold';
     font-size: 11px;
     background-color: #e84144;
     padding: 4px;
-    margin: 3px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+}
+
+.load-more-pos {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    margin: 3px;
 }
 
 .load-more>a {

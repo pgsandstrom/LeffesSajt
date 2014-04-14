@@ -18,7 +18,8 @@ get_header(); ?>
         <div class="cloud-left">
             <div class="cloud-titlebar cloud-title-left">
                 <span class="cloud-title">Välj bland rubriker</span>
-                <span class="load-more"><a href="javascript:void(0)" onclick="tusentips.shufflePosts();">LADDA FLER</a></span>
+                <span class="load-more load-more-pos hidden-sm"><a href="javascript:void(0)" onclick="tusentips.shufflePosts();">LADDA FLER</a></span>
+                <a class="load-more-pos visible-sm" href="javascript:void(0)" onclick="tusentips.shufflePosts();"><img src="<?php echo get_bloginfo('template_directory'); ?>/img/refresh.png"/></a>
             </div>
             <ul id="postList" class="cloud-body cloud-body-left">
                 <?php print_all_posts(); ?>
@@ -31,7 +32,8 @@ get_header(); ?>
         <div class="cloud-right">
             <div class="cloud-titlebar cloud-title-right">
                 <span class="cloud-title">Välj bland ämnen</span>
-                <span class="load-more"><a href="javascript:void(0)" onclick="tusentips.shuffleTags();">LADDA FLER</a></span>
+                <span class="load-more load-more-pos hidden-sm"><a href="javascript:void(0)" onclick="tusentips.shuffleTags();">LADDA FLER</a></span>
+                <a class="load-more-pos visible-sm" href="javascript:void(0)" onclick="tusentips.shuffleTags();"><img src="<?php echo get_bloginfo('template_directory'); ?>/img/refresh.png"/></a>
             </div>
             <ul id="tagList" class="cloud-body cloud-body-right">
                 <?php print_most_common_tags(); ?>

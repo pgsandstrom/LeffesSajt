@@ -1,29 +1,19 @@
-molnen ska ha random saker i sig å finnas en "mer"-knapp
-
-Gör namnen klickbara och med länk till ”om oss”-sidan.
+Dropdown för mindre skärmar
 
 Det svarta går inte ända ut i kanten
 
-Dropdown för mindre skärmar
+welcome-artikeln ska ha lite mindre avstånd uppe å nere... kanske-
 
 testa shareaholic?
 
-mailto utan att fylla i mottagare, går det? Lägg till "maila till"-knapp
-
 -----------------------
-
-TODO: Testa akismet
-
-TODO: Fixa för alla skärmstorlekar.
-
-TODO: Man kan inte klicka på hela headern, biten till vänster hamnar under titelns div...
 
 TODO: Kolla upp alla TODOs
 
-TODO: google analytics
-
 TODO: Städa
 
-MÅSTE INTE GÖRAS:
+skriv ut
 
-TODO: Ska datumen vara klickbara? NEJ!
+länkar i artikeln ska vara markerade på något sätt
+
+"ladda mer" är för stort på mindre skärmar
