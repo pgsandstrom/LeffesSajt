@@ -39,6 +39,33 @@
         }
         return cached;
     }
+
+    var postList = document.getElementById("postList");
+    var postListStyle = window.getComputedStyle(postList, null);
+    var loadMorePosts = document.getElementById("loadMorePosts");
+
+    var tagList = document.getElementById("tagList");
+    var tagListStyle = window.getComputedStyle(tagList, null);
+    var loadMoreTags = document.getElementById("loadMoreTags");
+
+    var activateMenu = function (list, style, loadMoreButton) {
+        if (style.display === "block") {
+            list.style.display = "none";
+            loadMoreButton.style.display = "none";
+        } else {
+            list.style.display = "block";
+            loadMoreButton.style.display = "block";
+        }
+    };
+
+    tusentips.activatePostMenu = function () {
+        activateMenu(postList, postListStyle, loadMorePosts);
+    };
+
+    tusentips.activateTagMenu = function () {
+        activateMenu(tagList, tagListStyle, loadMoreTags);
+    };
+
 })();
 
 // Fix for bug discussed here: http://stackoverflow.com/questions/21984543/google-chrome-bug-website-not-displaying-text

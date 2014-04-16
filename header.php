@@ -23,7 +23,7 @@
           media="screen"/>
 
     <link rel="shortcut icon"
-          href="<?php bloginfo('template_directory'); ?>/favicon.png"/>
+          href="<?php bloginfo('template_directory'); ?>/img/logo.png"/>
 
     <?php wp_head(); ?>
 
