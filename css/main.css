@@ -85,7 +85,7 @@
 .cloud-body {
     font-family: 'Gotham-Bold';
     padding: 5px 8px 5px 8px;
-    margin-left: 0px;
+
     height: 128px;
     font-size: 0.7em;
     margin-bottom: 15px;
@@ -93,7 +93,12 @@
     overflow: hidden;
 }
 
-.cloud-body>li {
+.cloud-body>ul {
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+
+.cloud-body>ul>li {
     background-color: white;
     display: inline-block;
     padding: 4px;
@@ -120,6 +125,10 @@
     margin: 3px;
 }
 
+.load-more-pos-below {
+
+}
+
 .menu-pos {
     position: absolute;
     top: 2px;
@@ -139,15 +148,15 @@
         height: auto;
     }
 
-    .cloud-body>li {
+    .cloud-body>ul>li {
         display: block;
     }
 
-    .cloud-body>li:nth-child(n+7) {
+    .cloud-body>ul>li:nth-child(n+7) {
         display: none;
     }
 
-    .cloud-body>li>a {
+    .cloud-body>ul>li>a {
         display: inline-block;
         width: 100%;
     }
@@ -552,6 +561,10 @@ footer.entry-meta {
 .search-field {
     margin: -5px 0px 5px -6px !important;
     width: 99%;
+}
+
+.mobile-separator {
+    margin-top:0px;
 }
 
 .twitter-follow {

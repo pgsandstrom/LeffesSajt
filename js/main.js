@@ -3,8 +3,9 @@
     "use strict";
     var tusentips = window.tusentips = window.tusentips || {};
 
+    //shuffle code:
     tusentips.shufflePosts = function () {
-        var list = document.getElementById("postList");
+        var list = document.getElementById("postList").children[0];
         var nodes = list.children, i = 0;
         nodes = Array.prototype.slice.call(nodes);
         nodes = shuffle(nodes);
@@ -15,7 +16,7 @@
     };
 
     tusentips.shuffleTags = function () {
-        var list = document.getElementById("tagList");
+        var list = document.getElementById("tagList").children[0];
         var nodes = list.children, i = 0;
         nodes = Array.prototype.slice.call(nodes);
         nodes = shuffle(nodes);
@@ -40,6 +41,7 @@
         return cached;
     }
 
+    //dropdown-code:
     var postList = document.getElementById("postList");
     var postListStyle = window.getComputedStyle(postList, null);
     var loadMorePosts = document.getElementById("loadMorePosts");
@@ -51,10 +53,10 @@
     var activateMenu = function (list, style, loadMoreButton) {
         if (style.display === "block") {
             list.style.display = "none";
-            loadMoreButton.style.display = "none";
+//            loadMoreButton.style.display = "none";
         } else {
             list.style.display = "block";
-            loadMoreButton.style.display = "block";
+//            loadMoreButton.style.display = "block";
         }
     };
 
