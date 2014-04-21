@@ -8,6 +8,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
         <div class="entry-meta">
+            <!-- Warning: This code exists both here and in content.php -->
             <span class="category-item">
                 <?php
                 print_categories();
@@ -20,11 +21,9 @@
             print_tags();
             ?>
         </div>
-        <!-- .entry-meta -->
 
         <h1 class="entry-title"><?php the_title(); ?></h1>
     </header>
-    <!-- .entry-header -->
 
     <div class="entry-content">
         <?php the_content(); ?>

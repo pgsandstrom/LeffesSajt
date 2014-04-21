@@ -9,7 +9,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
         <div class="entry-meta">
-            <!--            TODO denna finns både här och i content-single-->
+            <!-- Warning: This code exists both here and in content-single.php -->
             <span class="category-item">
                 <?php
                 print_categories();
@@ -21,11 +21,9 @@
             <?php
             print_tags();
             ?>
-
         </div>
 
         <h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-
     </header>
 
     <?php if (is_search()) : // Only display Excerpts for Search ?>

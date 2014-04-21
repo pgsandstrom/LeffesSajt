@@ -33,4 +33,4 @@ wp-postviews
 ---
 Det "most viewed template" som jag använder:
 TODO: Escapea den här...
-<li><a href="%POST_URL%"  title="%POST_TITLE%">%POST_TITLE%</a></li>
+&lt;li>&lt;a href="%POST_URL%"  title="%POST_TITLE%">%POST_TITLE%&lt;/a>&lt;/li>
