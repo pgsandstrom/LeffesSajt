@@ -12,9 +12,11 @@ if (!isset($content_width)) {
     $content_width = 640; /* pixels */
 }
 
+/**
+ * Print categories for the current post in the loop.
+ */
 function print_categories()
 {
-    //TODO Fixa cache åt denna å print_tags? Kan nog bli segt om de har flera hundra posts/tags.
     $categories = get_the_category();
     $separator = ' ';
     $output = '';
@@ -24,6 +26,9 @@ function print_categories()
     echo trim($output, $separator);
 }
 
+/**
+ * Print tags for the current post in the loop.
+ */
 function print_tags()
 {
     $posttags = get_the_tags();
@@ -38,6 +43,7 @@ function print_tags()
 
 function print_all_posts()
 {
+    //TODO Fixa cache åt denna å print_most_common_tags? Kan nog bli segt om de har flera hundra posts/tags.
     $args = array(/*'numberposts' => '10',*/ /*'category' => get_cat_ID('artiklar'), */ 'post_status' => 'publish');
     $all_posts = wp_get_recent_posts($args);
     foreach ($all_posts as $item) {
