@@ -4,12 +4,6 @@ testa shareaholic?
 
 -----------------------
 
-TODO: Kolla upp alla TODOs
-
-TODO: Städa
-
-skriv ut
+"skriv ut" på artiklarna
 
 länkar i artikeln ska vara markerade på något sätt
-
-"ladda mer" är för stort på mindre skärmar

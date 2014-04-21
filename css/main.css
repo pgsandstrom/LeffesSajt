@@ -484,6 +484,10 @@
     color: rgb(51, 51, 51);
 }
 
+.entry-content a {
+    text-decoration: underline;
+}
+
 /* För att placera headern längst med taggarna som inte är indenterade */
 .page-header {
     margin-left: -10px;
@@ -564,7 +568,7 @@ footer.entry-meta {
 }
 
 .mobile-separator {
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 .twitter-follow {
