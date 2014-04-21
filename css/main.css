@@ -125,10 +125,6 @@
     margin: 3px;
 }
 
-.load-more-pos-below {
-
-}
-
 .menu-pos {
     position: absolute;
     top: 2px;
@@ -230,7 +226,6 @@
 }
 
 #header-menu>div>ul>li {
-
     display: inline-block;
     padding-left: 25px;
     float: right;
@@ -272,14 +267,9 @@
     line-height: 36px;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 991px) {
     #authors {
-        position: absolute;
-        height: 200px;
-        /*TODO fulhack*/
-        margin-top: 0px;
-        margin-left: 822px;
-
+        display: none;
     }
 }
 
@@ -287,16 +277,9 @@
     #authors {
         position: absolute;
         height: 200px;
-        /*TODO fulhack*/
         margin-top: 0px;
         margin-left: 622px;
 
-    }
-}
-
-@media (max-width: 991px) {
-    #authors {
-        display: none;
     }
 }
 
@@ -304,7 +287,6 @@
     #authors {
         position: absolute;
         height: 200px;
-        /*TODO fulhack*/
         margin-top: 0px;
         margin-left: 822px;
 
@@ -388,6 +370,12 @@
 .wpp-list>li {
     display: list-item !important;
     overflow: visible !important;
+}
+
+/* Changes shareaholic position to align better */
+.shareaholic-canvas {
+    margin-top: -20px !important;
+    margin-left: -10px !important;
 }
 
 .sidebar-body {

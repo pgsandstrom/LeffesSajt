@@ -25,7 +25,7 @@
                 <ul>
                     <?php print_all_posts(); ?>
                 </ul>
-                <a class="load-more-pos-below visible-xs" href="javascript:void(0)"
+                <a class="visible-xs" href="javascript:void(0)"
                    onclick="tusentips.shufflePosts();">
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/img/refresh.png"/>
                 </a>
@@ -53,7 +53,7 @@
                 <ul>
                     <?php print_most_common_tags(); ?>
                 </ul>
-                <a class="load-more-pos-below visible-xs" href="javascript:void(0)"
+                <a class="visible-xs" href="javascript:void(0)"
                    onclick="tusentips.shuffleTags();">
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/img/refresh.png"/>
                 </a>
