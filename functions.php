@@ -38,7 +38,7 @@ function print_tags()
 
 function print_all_posts()
 {
-    $args = array(/*'numberposts' => '10',*/ /*'category' => get_cat_ID('artiklar')*/);
+    $args = array(/*'numberposts' => '10',*/ /*'category' => get_cat_ID('artiklar'), */ 'post_status' => 'publish');
     $all_posts = wp_get_recent_posts($args);
     foreach ($all_posts as $item) {
         echo '<li><a href="' . get_permalink($item["ID"]) . '">' . $item["post_title"] . '</a></li>';
