@@ -193,6 +193,7 @@
     height: 80px;
     font-size: 1em;
     margin-right: 5px; /* to make sure it doesn't stick out at the right side of the "authors"-image */
+    /*TODO: this actually sticks out to the left of the screen with 5px currently*/
 }
 
 #header-menu {
@@ -221,6 +222,10 @@
     /* Move the nav-menu closer to the right when the authors disappear: */
     #header-menu>div>ul {
         margin-right: 30px;
+    }
+
+    #site-navigation {
+        margin-right: 0px !important; /* remove margin now that the authors-image is gone */
     }
 }
 
