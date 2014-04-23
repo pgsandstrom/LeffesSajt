@@ -44,7 +44,7 @@ function print_tags()
 function print_all_posts()
 {
     //TODO Fixa cache åt denna å print_most_common_tags? Kan nog bli segt om de har flera hundra posts/tags.
-    $args = array(/*'numberposts' => '10',*/ /*'category' => get_cat_ID('artiklar'), */ 'post_status' => 'publish');
+    $args = array('numberposts' => '200', /*'category' => get_cat_ID('artiklar'), */ 'post_status' => 'publish');
     $all_posts = wp_get_recent_posts($args);
     foreach ($all_posts as $item) {
         echo '<li><a href="' . get_permalink($item["ID"]) . '">' . $item["post_title"] . '</a></li>';
@@ -76,7 +76,7 @@ function print_most_common_tags()
         $tags = get_tags(array(
             'orderby' => 'count',
             'order' => 'DESC',
-            'number' => 42,
+            'number' => 64,
             'include' => $term_ids,
         ));
         foreach ((array)$tags as $tag) {
