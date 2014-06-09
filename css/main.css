@@ -568,6 +568,28 @@ footer.entry-meta {
     margin-bottom: 15px;
 }
 
+#app-content {
+	/*text-align: center;*/
+}
+
+#app-content>.text {
+	padding-left: 20px;
+}
+
+#appstores {
+	margin-top: 6px;
+}
+
+#appstores>a>img {
+	margin-bottom: 5px;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .clearfix:before,
 .clearfix:after {
     content: "";
