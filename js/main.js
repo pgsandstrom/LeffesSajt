@@ -26,12 +26,12 @@
         }
     };
 
-    tusentips.shufflePosts();
-    tusentips.shuffleTags();
-
-
     function shuffle(items) {
         var cached = items.slice(0), temp, i = cached.length, rand;
+        if(i < 2) {
+            return cached;
+        }
+
         while (--i) {
             rand = Math.floor(i * Math.random());
             temp = cached[rand];
@@ -40,6 +40,9 @@
         }
         return cached;
     }
+
+	tusentips.shufflePosts();
+	tusentips.shuffleTags();
 
     //dropdown-code:
     var postList = document.getElementById("postList");
