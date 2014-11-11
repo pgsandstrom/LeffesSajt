@@ -14,11 +14,9 @@ Plugins:
 ---------------
 https://github.com/pgsandstrom/wordpress_json_api (originalet ligger på http://wordpress.org/plugins/json-api/)
 
-http://wordpress.org/plugins/wp-postviews/
-
 http://wordpress.org/plugins/wordpress-popular-posts/
 
-http://wordpress.org/plugins/really-simple-facebook-twitter-share-buttons/installation/
+https://wordpress.org/plugins/shareaholic/
 
 Troubleshooting
 ===
@@ -29,7 +27,7 @@ Jag har hårdkodat två kategorier: "dagens tips" och "artiklar". Alla posts ska
 
 Json Api
 ---
-Glöm inte att aktivera "User-friendly permalinks" i settings!
+Glöm inte att fixa urlen: Settings -> Permalinks -> "Post name"
 
 Exempel: example.com/api/get_category_posts/?category_slug=tips
 
