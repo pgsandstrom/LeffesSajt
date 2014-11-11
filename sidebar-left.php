@@ -15,7 +15,7 @@
         <h2 class="sidebar-title">MEST LÄSTA</h2>
         <?php
         if (function_exists('wpp_get_mostpopular')) {
-            wpp_get_mostpopular("limit=5&post_type=post");
+            wpp_get_mostpopular("limit=5&post_type=post&stats_views=0&range=weekly");
         }
         ?>
     </aside>
