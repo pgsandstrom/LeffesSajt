@@ -7,13 +7,7 @@
 ?>
 <div id="sidebar-right" class="widget-area sidebar sidebar-right col-md-3 hidden-sm hidden-xs" role="complementary">
 
-	<aside class="twitter-follow">
-		<a href="https://twitter.com/tusentips" class="twitter-follow-button" data-show-count="false" data-lang="sv" data-size="large">Följ @tusentips</a>
-	</aside>
-
 	<aside id="app-content">
-		<div class="text">Nu som app</div>
-		<div class="text">i din mobil!</div>
 		<img src="<?php echo get_bloginfo('template_directory'); ?>/img/app_screenshot.png"/>
 
 		<div id="appstores">
@@ -33,7 +27,10 @@
 	</aside>
 
 	<aside class="gplus-follow">
-		<div class="center-block" style="width: 88px">
+		<div class="center-block" style="width: 87px">
+			<script src="https://apis.google.com/js/platform.js" async defer>
+				{lang: 'sv'}
+			</script>
 			<div class="g-follow" data-annotation="none" data-height="24" data-href="//plus.google.com/u/0/110461382714372253708" data-rel="publisher"></div>
 		</div>
 	</aside>
