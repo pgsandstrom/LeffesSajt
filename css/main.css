@@ -484,6 +484,7 @@
 
 /* För att placera headern längst med taggarna som inte är indenterade */
 .page-header {
+    margin-top: 10px !important;
     margin-left: -10px;
 }
 
