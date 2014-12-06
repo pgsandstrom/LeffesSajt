@@ -18,12 +18,16 @@ if (!isset($content_width)) {
 function print_categories()
 {
     $categories = get_the_category();
-    $separator = ' ';
-    $output = '';
-    foreach ($categories as $category) {
-        $output .= '<a href="' . get_category_link($category->term_id) . '">' . mb_strtoupper($category->cat_name) . '</a>' . $separator;
+    if ($categories) {
+        echo '<span class="category-item">';
+        $separator = ' ';
+        $output = '';
+        foreach ($categories as $category) {
+            $output .= '<a href="' . get_category_link($category->term_id) . '">' . mb_strtoupper($category->cat_name) . '</a>' . $separator;
+        }
+        echo trim($output, $separator);
+        echo '</span>';
     }
-    echo trim($output, $separator);
 }
 
 /**

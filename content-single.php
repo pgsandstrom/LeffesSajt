@@ -8,13 +8,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
         <div class="entry-meta">
-            <!-- Warning: This code exists both here and in content.php -->
-            <span class="category-item">
-                <?php
-                print_categories();
-                ?>
-            </span>
 
+            <!-- Warning: This code exists both here and in content-single.php -->
+            <?php print_categories(); ?>
             <?php innovation1000_posted_on(); ?>
 
             <?php

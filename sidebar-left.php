@@ -11,6 +11,10 @@
 		<?php get_search_form(); ?>
 	</aside>
 
+	<aside id="archive" class="widget widget_archive">
+		<a href="<?php echo get_page_link( get_page_by_title( 'Arkiv' )->ID ); ?>">Arkiv</a>
+	</aside>
+
 	<aside id="recent" class="widget">
 		<h2 class="sidebar-title">MEST LÄSTA</h2>
 		<?php

@@ -562,6 +562,15 @@ footer.entry-meta {
     width: 99%;
 }
 
+#archive {
+    font-size: 1em;
+    font-family: 'Gotham-Bold';
+}
+
+.widget_archive {
+    padding-top: 2px;
+}
+
 .mobile-separator {
     margin-top: 0px;
 }

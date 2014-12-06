@@ -21,9 +21,17 @@ https://wordpress.org/plugins/shareaholic/
 Troubleshooting
 ===
 
+Vid uppdatering
+---
+Kom ihåg att välja "Utseende -> Menyer" efter varje gång temat uppdaterats.
+
 Kategorier hårdkodade
 ---
 Jag har hårdkodat två kategorier: "dagens tips" och "artiklar". Alla posts ska tillhöra någon av dessa!
+
+Sidor hårdkodade
+---
+Jag har hårdkodat en page "Arkiv", som ska vara tom förutom rubriken. Utan denna funkar inte "Arkiv"-sidan
 
 Json Api
 ---
