@@ -567,8 +567,23 @@ footer.entry-meta {
     font-family: 'Gotham-Bold';
 }
 
+.archive-date-title {
+    font-family: 'Gotham-Bold';
+}
+
+.archive-link {
+    padding-left: 20px;
+}
+
+.archive-date {
+    padding-left: 10px;
+    font-size: 0.7em;
+    color: darkgray;
+}
+
 .widget_archive {
-    padding-top: 2px;
+    padding-top: 4px;
+    padding-bottom: 6px;
 }
 
 .mobile-separator {

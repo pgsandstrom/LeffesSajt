@@ -11,10 +11,6 @@
 		<?php get_search_form(); ?>
 	</aside>
 
-	<aside id="archive" class="widget widget_archive">
-		<a href="<?php echo get_page_link( get_page_by_title( 'Arkiv' )->ID ); ?>">Arkiv</a>
-	</aside>
-
 	<aside id="recent" class="widget">
 		<h2 class="sidebar-title">MEST LÄSTA</h2>
 		<?php
@@ -96,6 +92,10 @@
 				<li><a href="<?php echo get_permalink(144); ?>"><?php echo get_the_title(144); ?></a></li>
 			<?php endif ?>
 		</ul>
+	</aside>
+
+	<aside id="archive" class="widget widget_archive">
+		<a class="sidebar-title" href="<?php echo get_page_link( get_page_by_title( 'Arkiv' )->ID ); ?>">BLÄDDRA I ARKIVET</a>
 	</aside>
 
 	<aside id="recent" class="">

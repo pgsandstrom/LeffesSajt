@@ -19,10 +19,6 @@ get_template_part('content_presenter');
 	<?php get_sidebar('left'); ?>
 
 	<main id="main" class="site-main col-md-6 col-sm-8 col-xs-12" role="main">
-		<div>ARCHIVE LOL</div>
-		<?php //wp_get_archives('type=monthly&limit=12'); ?>
-
-
 		<?php
 		//		$args = array( 'posts_per_page' => 5, 'offset'=> 1, 'category' => 1 );
 		//				$args = array( 'posts_per_page' => 3 );
@@ -32,24 +28,27 @@ get_template_part('content_presenter');
 		$lastmonth = 'foo';
 		$lastyear = 'bar';
 		foreach ($myposts as $post) : setup_postdata($post);
-			echo $post->ID;
+			$dayInMonth = date("j", strtotime($post->post_date));
 			$month = date("m", strtotime($post->post_date));
+			$monthTextShort = date("M", strtotime($post->post_date));
 			$year = date("Y", strtotime($post->post_date));
 			if ($month !== $lastmonth || $year !== $lastyear) {
 				$lastmonth = $month;
 				$lastyear = $year;
 				$monthtext = date("F", strtotime($post->post_date));
 				?>
-				<?=$monthtext ?> <?=$year ?>
+				<div class="archive-date-title">
+					<?= $monthtext ?> <?= $year ?>
+				</div>
 
-				<?php
+			<?php
 
 			}
 
 			?>
-			<li>
-				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-			</li>
+			<div class="archive-link">
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a> <span class="archive-date"> <?= $dayInMonth?> <?= $monthTextShort?> <?= $year ?></span>
+			</div>
 		<?php endforeach;
 		wp_reset_postdata(); ?>
 
