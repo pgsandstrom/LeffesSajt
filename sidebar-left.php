@@ -11,7 +11,11 @@
 		<?php get_search_form(); ?>
 	</aside>
 
-	<aside id="recent" class="widget">
+	<aside id="archive" class="widget widget_archive">
+		<a class="sidebar-title" href="<?php echo get_page_link( get_page_by_title( 'Arkiv' )->ID ); ?>">BLÄDDRA I ARKIVET</a>
+	</aside>
+
+	<aside class="widget">
 		<h2 class="sidebar-title">MEST LÄSTA</h2>
 		<?php
 		if (function_exists('wpp_get_mostpopular')) {
@@ -31,7 +35,7 @@
 	<!--        </ul>-->
 	<!--    </aside>-->
 
-	<aside id="recent" class="widget">
+	<aside class="widget">
 		<h2 class="sidebar-title">ORDLISTOR</h2>
 
 		<ul class="sidebar-body">
@@ -46,7 +50,7 @@
 		</ul>
 	</aside>
 
-	<aside id="recent" class="widget">
+	<aside class="widget">
 		<h2 class="sidebar-title">MARTINS FEM FAVORITER</h2>
 
 		<ul class="sidebar-body">
@@ -70,7 +74,7 @@
 		</ul>
 	</aside>
 
-	<aside id="recent" class="widget">
+	<aside class="widget">
 		<h2 class="sidebar-title">LEIFS FEM FAVORITER</h2>
 
 		<ul class="sidebar-body">
@@ -94,15 +98,23 @@
 		</ul>
 	</aside>
 
-	<aside id="archive" class="widget widget_archive">
-		<a class="sidebar-title" href="<?php echo get_page_link( get_page_by_title( 'Arkiv' )->ID ); ?>">BLÄDDRA I ARKIVET</a>
-	</aside>
+	<aside class="sponsors">
+		<div>
+			<span>TUSENTIPS FINANSIERAS AV</span>
+			<a target="_blank">
+				<img src="<?php echo get_bloginfo('template_directory'); ?>/img/vinnova_logo.jpg"/>
+			</a>
+		</div>
 
-	<aside id="recent" class="">
-		I SAMARBETE MED
-		<a href="http://vinnova.se" target="_blank">
-			<img id="vinnova" src="<?php echo get_bloginfo('template_directory'); ?>/img/vinnova_logo.jpg"/>
-		</a>
+		<div>
+			<span>VI SAMARBETAR MED</span>
+			<a id="personalledarskap" href="http://www.personalledarskap.se/" target="_blank">
+				<img src="<?php echo get_bloginfo('template_directory'); ?>/img/personalledarskap.jpg"/>
+			</a>
+			<a id="snitts" href="http://www.snitts.se/" target="_blank">
+				<img src="<?php echo get_bloginfo('template_directory'); ?>/img/snitts.png"/>
+			</a>
+		</div>
 	</aside>
 
 

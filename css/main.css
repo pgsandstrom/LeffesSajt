@@ -391,13 +391,38 @@
     font-family: 'Gotham-Bold';
 }
 
+.sponsors {
+    font-size: 0.85em;
+}
+
+.sponsors > div {
+    padding-bottom: 12px !important;
+}
+
+.sponsors > div > a > img {
+    width: 100% !important;
+}
+
+#personalledarskap {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+#snitts {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.sponsors > div {
+    padding-bottom: 20px;
+}
+
 .site-main {
     min-width: 320px;
     padding-bottom: 40px;
 }
 
 @media (min-width: 992px) {
-    /*adjust so sidebars are thinner:*/
     .sidebar {
         width: 19.5%;
     }
@@ -406,6 +431,13 @@
         width: 61%;
         padding-top: 12px;
         padding-left: 27px;
+    }
+}
+
+@media (max-width: 1199px) {
+    /* Keep sponsor text on one row */
+    .sponsors {
+        font-size: 0.70em;
     }
 }
 
@@ -552,10 +584,6 @@ footer.entry-meta {
 
 .tag-item>a {
     color: white !important;
-}
-
-#vinnova {
-    width: 100% !important;
 }
 
 .search-field {
