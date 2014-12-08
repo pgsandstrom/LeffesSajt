@@ -393,6 +393,7 @@
 
 .site-main {
     min-width: 320px;
+    padding-bottom: 40px;
 }
 
 @media (min-width: 992px) {
