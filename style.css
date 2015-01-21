@@ -535,7 +535,7 @@ a:active {
 }
 
 /* Search widget */
-.widget_search .search-submit {
+.search-submit {
     display: none;
 }
 

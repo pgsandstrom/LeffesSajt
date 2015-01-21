@@ -64,7 +64,7 @@ get_template_part('content_presenter');
         //            'category_name' => 'artiklar',
         //            'paged' => $paged
         //        ,
-        //            'posts_per_page' => 5     <- denna sak inte användas
+        //            'posts_per_page' => 5     <- denna ska inte användas
         //        );
         //        $wp_query = new WP_Query($args);
         if (have_posts()) :
