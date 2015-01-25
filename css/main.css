@@ -31,57 +31,6 @@
     display: none;
 }
 
-.mobile-menu {
-    margin-bottom: 15px;
-}
-
-.mobile-menu > .mobile-menu-archive {
-    padding: 5px;
-}
-
-.mobile-menu > .mobile-menu-archive > a {
-    padding-top: 7px;
-}
-
-@media (max-width: 460px) {
-    .mobile-menu-archive .archive-text-long {
-        display: none;
-    }
-}
-
-@media (min-width: 461px) {
-    .mobile-menu-archive .archive-text-short {
-        display: none;
-    }
-}
-
-.mobile-menu > .mobile-menu-search {
-    padding: 5px 3px 5px 3px;
-}
-
-.mobile-menu > .mobile-menu-search label {
-    width: 90%;
-    padding-right: 3px;
-}
-
-.mobile-menu > .mobile-menu-search input {
-    width: 100%;
-    margin-top: -3px;
-    padding: 3px 0 3px 3px;
-}
-
-.mobile-menu > div > * {
-    height: 38px;
-    font-size: 1em;
-    font-family: 'Gotham-Bold';
-    display: block;
-    padding-top: 6px;
-    padding-bottom: 5px;
-    background-color: #bfbfbf;
-    border-radius: 4px;
-    text-align: center;
-}
-
 .container-cloud-left {
     padding-right: 2px;
 }
@@ -406,6 +355,94 @@
     }
 }
 
+/* Nya mobil-headern */
+
+#mobile-header-container {
+    padding-top: 15px;
+}
+
+.mobile-main-logo {
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+
+.mobile-site-title {
+    float: left;
+    font-family: 'Gotham-Bold';
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 353px) {
+    .mobile-site-title>a>div {
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+@media (min-width: 354px) {
+    .mobile-site-title>a>div {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
+/* Mobile menu (archive and search) */
+.mobile-menu {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.mobile-menu > .mobile-menu-archive {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.mobile-menu > .mobile-menu-archive > a {
+    padding-top: 7px;
+}
+
+@media (max-width: 460px) {
+    .mobile-menu-archive .archive-text-long {
+        display: none;
+    }
+}
+
+@media (min-width: 461px) {
+    .mobile-menu-archive .archive-text-short {
+        display: none;
+    }
+}
+
+.mobile-menu > .mobile-menu-search {
+    padding: 0px 3px 0px 3px;
+}
+
+.mobile-menu > .mobile-menu-search label {
+    width: 90%;
+    padding-right: 3px;
+}
+
+.mobile-menu > .mobile-menu-search input {
+    width: 100%;
+    margin-top: -3px;
+    padding: 3px 0 3px 3px;
+}
+
+.mobile-menu > div > * {
+    height: 38px;
+    font-size: 1em;
+    font-family: 'Gotham-Bold';
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    background-color: #bfbfbf;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
 .wpp-list {
     font-size: 0.8em;
     padding-top: 5px;
@@ -720,4 +757,8 @@ body {
     to {
         opacity: 1;
     }
+}
+
+.black {
+    background: #000000;
 }
