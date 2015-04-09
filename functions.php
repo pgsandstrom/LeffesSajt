@@ -39,7 +39,9 @@ function print_tags()
     if ($posttags) {
         foreach ($posttags as $tag) {
 //            echo '<a href="' . esc_url($category_link) . '">' . $category->cat_name . '</a>';
+            if (strcmp($tag->name, "ref") !== 0) {
             echo '<span class="tag-item"><a href="' . get_tag_link($tag->term_id) . '" >' . mb_strtoupper($tag->name) . '</a></span>';
+            }
 //            echo '<span class="tag-item">' . mb_strtoupper($tag->name) . '</span>';
         }
     }
