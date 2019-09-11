@@ -622,7 +622,8 @@ footer.entry-meta {
     display: inline-block;
     font-family: 'Gotham-Bold';
     font-size: 0.7em;
-    background-color: #ef9909;
+    /*background-color: #ef9909;*/
+    background-color: #2ac6c7;
     color: white !important;
     padding: 6px 8px 0px 8px;
     -webkit-border-radius: 4px;
@@ -637,7 +638,8 @@ footer.entry-meta {
 }
 
 .posted-on {
-    display: inline-block;
+    /*display: inline-block;*/
+	display:none;
     font-family: 'Gotham-Bold';
     font-size: 0.7em;
     background-color: #2ac6c7;
